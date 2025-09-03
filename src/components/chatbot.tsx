@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { MessageCircle, X, Send } from "lucide-react";
+import logo from "@/assets/Agilium_logo_resized.png";
 
 interface Message {
   id: number;
@@ -328,11 +329,7 @@ export function Chatbot(props: ChatbotProps = {}) {
         >
           <CardHeader className="pb-3 sticky top-0 z-10 bg-transparent backdrop-blur-sm">
             <CardTitle className="flex items-center gap-2 text-white">
-              <img
-                src="/images/agilium-logo.png"
-                alt="Agilium Logo"
-                className="w-8 h-8"
-              />
+              <img src={logo} alt="Agilium Logo" className="w-8 h-8" />
               {headerTitle}
               <span className="text-xs bg-green-500 text-white px-2 py-1 rounded-full ml-auto">
                 {onlineBadgeText}

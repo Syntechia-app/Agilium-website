@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/Agilium_logo_resized.png";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ export function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/images/Agilium_logo_resized.png"
+              src={logo}
               alt="Agilium logo"
               width={32}
               height={32}

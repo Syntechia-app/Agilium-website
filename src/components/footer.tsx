@@ -1,12 +1,13 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/Agilium_logo_resized.png";
 
 export function Footer() {
   return (
     <footer
       className="text-blue-200"
       style={{
-        backgroundImage: 'linear-gradient(180deg, #000000, #1a1a1a)',
-        borderTop: '1px solid rgba(20, 193, 250, 0.25)'
+        backgroundImage: "linear-gradient(180deg, #000000, #1a1a1a)",
+        borderTop: "1px solid rgba(20, 193, 250, 0.25)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -14,7 +15,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-3">
               <img
-                src="/images/agilium-logo.png"
+                src={logo}
                 alt="Agilium logo"
                 width={32}
                 height={32}
@@ -28,7 +29,7 @@ export function Footer() {
             <div className="flex gap-3 mt-4" aria-label="Social links">
               <a
                 className="transition-colors"
-                style={{ color: '#e6f2f5' }}
+                style={{ color: "#e6f2f5" }}
                 href="#"
                 aria-label="LinkedIn"
               >
@@ -36,7 +37,7 @@ export function Footer() {
               </a>
               <a
                 className="transition-colors"
-                style={{ color: '#e6f2f5' }}
+                style={{ color: "#e6f2f5" }}
                 href="#"
                 aria-label="Twitter"
               >
@@ -44,7 +45,7 @@ export function Footer() {
               </a>
               <a
                 className="transition-colors"
-                style={{ color: '#e6f2f5' }}
+                style={{ color: "#e6f2f5" }}
                 href="#"
                 aria-label="Facebook"
               >
@@ -59,7 +60,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors rounded"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/services"
                 >
                   Overview
@@ -68,7 +69,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors rounded"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/services/digital-solutions"
                 >
                   Digital Solutions
@@ -77,7 +78,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors rounded"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/services"
                 >
                   AI Solutions
@@ -86,7 +87,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors rounded"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/services"
                 >
                   IoT Solutions
@@ -101,7 +102,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/about"
                 >
                   About Us
@@ -110,7 +111,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/why-agilium"
                 >
                   Why Agilium
@@ -119,7 +120,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors"
-                  style={{ color: '#e6f2f5' }}
+                  style={{ color: "#e6f2f5" }}
                   to="/contact"
                 >
                   Contact
@@ -135,7 +136,13 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 text-xs" style={{ borderTop: '1px solid rgba(20, 193, 250, 0.25)', color: '#cfe8ee' }}>
+        <div
+          className="mt-10 pt-6 text-xs"
+          style={{
+            borderTop: "1px solid rgba(20, 193, 250, 0.25)",
+            color: "#cfe8ee",
+          }}
+        >
           <p>
             © {new Date().getFullYear()} Agilium Technologies. All rights
             reserved.

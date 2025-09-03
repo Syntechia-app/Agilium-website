@@ -9,6 +9,7 @@ import "./styles.css";
 
 // Create a new router instance
 const router = createRouter({
+  basepath: "/agilium-dev",
   routeTree,
   context: {},
   defaultPreload: "intent",

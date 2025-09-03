@@ -1,47 +1,47 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card";
 
 const partners = [
   {
     name: "ATHRIB IT",
-    logo: "/images/partners/athrib-bg.png",
+    logo: "/agilium-dev/images/partners/athrib-bg.png",
     category: "Website Development",
   },
   {
     name: "GAD MEDICAL",
-    logo: "/images/partners/gad med.png",
+    logo: "/agilium-dev/images/partners/gad med.png",
     category: "Website Development",
   },
   {
     name: "SAMGEO",
-    logo: "/images/partners/samgeo.png",
+    logo: "/agilium-dev/images/partners/samgeo.png",
     category: "Website Development",
   },
   {
     name: "WALES",
-    logo: "/images/partners/Wales.png",
+    logo: "/agilium-dev/images/partners/Wales.png",
     category: "Network Infrastructure",
   },
   {
     name: "KOCH MEDICAL",
-    logo: "/images/partners/koch-medical.png",
+    logo: "/agilium-dev/images/partners/koch-medical.png",
     category: "Website Development",
   },
   {
     name: "ALISMAILY MEDICAL",
-    logo: "/images/partners/alismailymedical.png",
+    logo: "/agilium-dev/images/partners/alismailymedical.png",
     category: "IT & Consulting",
   },
   {
     name: "HORIZON TECHNOLOGIES",
-    logo: "/images/partners/horizon-logo.png",
+    logo: "/agilium-dev/images/partners/horizon-logo.png",
     category: "Website Development",
   },
   {
     name: "SYNTECHIA",
-    logo: "/images/partners/syntechia.png",
+    logo: "/agilium-dev/images/partners/syntechia.png",
     category: "Virtualization",
   },
-]
+];
 
 export function Partners() {
   return (
@@ -52,7 +52,8 @@ export function Partners() {
             Our <span className="text-[color:var(--brand-cyan)]">Partners</span>
           </h2>
           <p className="text-xl text-blue-200 max-w-4xl mx-auto">
-            We collaborate with industry leaders to deliver best-in-class solutions
+            We collaborate with industry leaders to deliver best-in-class
+            solutions
           </p>
         </div>
 
@@ -71,7 +72,9 @@ export function Partners() {
                   height={48}
                   className="w-full h-12 object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity"
                 />
-                <h3 className="text-white font-semibold mb-2">{partner.name}</h3>
+                <h3 className="text-white font-semibold mb-2">
+                  {partner.name}
+                </h3>
                 <p className="text-blue-300 text-sm">{partner.category}</p>
               </CardContent>
             </Card>
@@ -81,12 +84,15 @@ export function Partners() {
         <div className="text-center mt-12">
           <p className="text-blue-200">
             Interested in partnering with us?
-            <a href="#contact" className="text-[color:var(--brand-cyan)] hover:opacity-90 ml-2 underline">
+            <a
+              href="#contact"
+              className="text-[color:var(--brand-cyan)] hover:opacity-90 ml-2 underline"
+            >
               Get in touch
             </a>
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }

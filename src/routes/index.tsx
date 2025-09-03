@@ -1,0 +1,49 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/hero";
+import { About } from "@/components/about";
+import { Services } from "@/components/services";
+import { WhyAgilium } from "@/components/why-agilium";
+import { Partners } from "@/components/partners";
+import { Contact } from "@/components/contact";
+
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      {
+        name: "description",
+        content:
+          "A multidisciplinary innovation company that transforms ambitious visions into measurable impact. We combine cutting-edge technology, human-centered design, and strategic expertise.",
+      },
+      {
+        name: "keywords",
+        content:
+          "digital transformation, AI solutions, IoT, data analytics, cybersecurity, software development, technology consulting, agilium technologies",
+      },
+      {
+        name: "author",
+        content: "Agilium Technologies",
+      },
+      {
+        name: "publisher",
+        content: "Agilium Technologies",
+      },
+      {
+        title: "Agilium Technologies - Where Innovation Meets Success",
+      },
+    ],
+  }),
+  component: App,
+});
+
+export default function App() {
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+      <Hero />
+      <About />
+      <Services />
+      <WhyAgilium />
+      <Partners />
+      <Contact />
+    </main>
+  );
+}

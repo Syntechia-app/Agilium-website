@@ -1,0 +1,192 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+/* In your global CSS file (e.g., src/app/globals.css) */
+
+/* Add these custom animations */
+@layer utilities {
+  @keyframes float {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-20px) translateX(10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+  }
+
+  @keyframes shimmer {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+    50% { transform: scale(1.2) rotate(5deg); opacity: 1; }
+  }
+
+  .animate-float {
+    animation: float 12s ease-in-out infinite;
+  }
+  .animate-shimmer {
+    animation: shimmer 3s ease-in-out infinite;
+  }
+}
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Agilium Brand Palette */
+  --brand-blue-glow: #0cbfd8; /* Primary */
+  --brand-cyan-bright: #01e7f6; /* Primary accent */
+  --brand-red-accent: #ff5953; /* Accent */
+
+  /* Secondary Blues */
+  --brand-deep-aqua: #0fb4e1;
+  --brand-sky-blue: #0dcff8;
+  --brand-light-aqua: #11c9f9;
+  --brand-electric-blue: #14c1fa;
+  --brand-fresh-blue: #12c6f9;
+  --brand-warm-red-1: #ff5a53;
+  --brand-warm-red-2: #ff5b53;
+
+  /* Neutrals */
+  --neutral-charcoal: #1a1a1a;
+  --neutral-soft-gray: #f2f2f2;
+  --neutral-white: #ffffff;
+
+  /* Backwards-compat for existing components */
+  --brand-blue: var(--brand-blue-glow);
+  --brand-cyan: var(--brand-cyan-bright);
+  --brand-ink: var(--neutral-charcoal);
+  --brand-coral: var(--brand-red-accent);
+  --brand-orange: var(--brand-warm-red-2);
+
+  /* System tokens mapped to brand */
+  --background: var(--neutral-soft-gray);
+  --foreground: var(--neutral-charcoal);
+  --card: var(--neutral-white);
+  --card-foreground: var(--neutral-charcoal);
+  --popover: var(--neutral-white);
+  --popover-foreground: var(--neutral-charcoal);
+  --primary: var(--brand-blue-glow);
+  --primary-foreground: var(--neutral-white);
+  --secondary: var(--neutral-soft-gray);
+  --secondary-foreground: var(--neutral-charcoal);
+  --muted: var(--neutral-soft-gray);
+  --muted-foreground: #7a7a7a;
+  --accent: var(--brand-red-accent);
+  --accent-foreground: var(--neutral-white);
+  --destructive: var(--brand-red-accent);
+  --destructive-foreground: var(--neutral-white);
+  --border: #d9d9d9;
+  --input: #d9d9d9;
+  --ring: var(--brand-cyan-bright);
+  --chart-1: var(--brand-blue-glow);
+  --chart-2: var(--brand-cyan-bright);
+  --chart-3: var(--brand-electric-blue);
+  --chart-4: var(--brand-red-accent);
+  --chart-5: var(--brand-warm-red-2);
+  --radius: 0.625rem;
+  --sidebar: var(--neutral-white);
+  --sidebar-foreground: var(--neutral-charcoal);
+  --sidebar-primary: var(--brand-blue-glow);
+  --sidebar-primary-foreground: var(--neutral-white);
+  --sidebar-accent: var(--neutral-soft-gray);
+  --sidebar-accent-foreground: var(--neutral-charcoal);
+  --sidebar-border: #e6e6e6;
+  --sidebar-ring: var(--brand-cyan-bright);
+
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, #ff5953, #0cbfd8, #01e7f6);
+  --gradient-dark-bg: linear-gradient(135deg, #000000, #1a1a1a, #0cbfd8);
+  --header-gradient-dark-bg: linear-gradient(135deg, #000000, #1a1a1a);
+}
+
+.dark {
+  --background: var(--neutral-charcoal);
+  --foreground: var(--neutral-white);
+  --card: var(--neutral-charcoal);
+  --card-foreground: var(--neutral-white);
+  --popover: var(--neutral-charcoal);
+  --popover-foreground: var(--neutral-white);
+  --primary: var(--neutral-white);
+  --primary-foreground: var(--neutral-charcoal);
+  --secondary: #111111;
+  --secondary-foreground: var(--neutral-white);
+  --muted: #111111;
+  --muted-foreground: #d6d6d6;
+  --accent: #111111;
+  --accent-foreground: var(--neutral-white);
+  --destructive: #7F1D1D;
+  --destructive-foreground: #FEE2E2;
+  --border: #262626;
+  --input: #262626;
+  --ring: var(--brand-cyan-bright);
+  --chart-1: var(--brand-cyan-bright);
+  --chart-2: var(--brand-blue-glow);
+  --chart-3: var(--brand-electric-blue);
+  --chart-4: var(--brand-red-accent);
+  --chart-5: var(--brand-warm-red-2);
+  --sidebar: #0b0b0b;
+  --sidebar-foreground: var(--neutral-white);
+  --sidebar-primary: var(--brand-cyan-bright);
+  --sidebar-primary-foreground: #0b0b0b;
+  --sidebar-accent: #111111;
+  --sidebar-accent-foreground: var(--neutral-white);
+  --sidebar-border: #262626;
+  --sidebar-ring: var(--brand-cyan-bright);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+        font-family: 'Inter', 'Inter Fallback';
+    font-style: normal;
+  }
+}
+/* In your global CSS file */
+::-webkit-scrollbar {
+  @apply w-1; /* Sets the width of the scrollbar */
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-full; /* Styles the scrollbar thumb */
+}
+
+

@@ -135,12 +135,7 @@ export function Hero() {
         >
           <Button
             size="lg"
-            className="text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_25px_50px_-12px_color-mix(in_oklab,var(--brand-blue-glow)_40%,transparent)] focus-visible:ring-2"
-            style={{
-              backgroundImage: "var(--gradient-brand)",
-              boxShadow:
-                "0 20px 40px -10px color-mix(in oklab, var(--brand-blue-glow) 30%, transparent)",
-            }}
+            className="bg-[color:var(--brand-blue)] hover:bg-[color:var(--brand-cyan)] text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-[color:var(--brand-cyan)] focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--brand-ink)]"
           >
             Explore Our Services
             <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -149,11 +144,9 @@ export function Hero() {
           <Button
             variant="outline"
             size="lg"
-            className="px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 bg-transparent hover:bg-[var(--brand-red-accent)] hover:border-[var(--brand-red-accent-hover)] focus-visible:ring-2"
+            className="border-2 border-[color:var(--brand-cyan)] text-blue-100 hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 bg-transparent focus-visible:ring-2 focus-visible:ring-[color:var(--brand-cyan)] focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--brand-ink)]"
             style={{
-              borderColor: "var(--brand-red-accent)",
               color: "#ffffff",
-              boxShadow: "inset 0 0 0 1px var(--brand-red-accent)",
             }}
           >
             Learn More About Us

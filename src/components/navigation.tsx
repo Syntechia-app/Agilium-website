@@ -51,10 +51,7 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Button
-              className="text-white shadow-md hover:shadow-lg focus-visible:ring-2"
-              style={{ backgroundImage: "var(--gradient-brand)" }}
-            >
+            <Button className="bg-[color:var(--brand-blue)] hover:bg-[color:var(--brand-cyan)] text-white shadow-md hover:shadow-lg focus-visible:ring-2 focus-visible:ring-[color:var(--brand-cyan)]">
               Get Started
             </Button>
           </div>
@@ -93,12 +90,7 @@ export function Navigation() {
                 </Link>
               ))}
               <div className="px-4">
-                <Button
-                  className="w-full text-white"
-                  style={{ backgroundImage: "var(--gradient-brand)" }}
-                >
-                  Get Started
-                </Button>
+                <Button className="w-full text-white">Get Started</Button>
               </div>
             </div>
           </div>

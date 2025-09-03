@@ -295,7 +295,7 @@ export function Services() {
 
                   <Button
                     variant="outline"
-                    className="w-full mt-6 bg-transparent border-cyan-400 text-cyan-400 transition-all duration-300 group-hover:bg-cyan-400 group-hover:text-black group-hover:shadow-lg group-hover:shadow-cyan-400/50"
+                    className="w-full mt-4 border-[color:var(--brand-cyan)]/50 text-[color:var(--brand-cyan)] hover:bg-[color:var(--brand-cyan)]/10 bg-transparent"
                   >
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

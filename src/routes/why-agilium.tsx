@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { WhyAgilium } from "@/components/why-agilium";
+import { WhyAgiliumHero } from "@/components/why-agilium-hero";
 
 export const Route = createFileRoute("/why-agilium")({
   head: () => ({
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/why-agilium")({
 export default function WhyAgiliumPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+      <WhyAgiliumHero />
       <WhyAgilium />
     </main>
   );

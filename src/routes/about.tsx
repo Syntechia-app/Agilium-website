@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { About } from "@/components/about";
+import AboutPageHero from "@/components/about-hero";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -24,7 +25,8 @@ export const Route = createFileRoute("/about")({
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+    <main className="min-h-screen bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A]">
+      <AboutPageHero />
       <About />
     </main>
   );

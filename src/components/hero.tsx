@@ -30,10 +30,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Background Effects */}
-      <div
-        className="absolute inset-0"
-        style={{ backgroundImage: "var(--gradient-dark-bg)" }}
-      />
+      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
       <div className="absolute inset-0 opacity-10 -z-10" />
 
       {/* Floating Elements with new animation */}

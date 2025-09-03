@@ -19,9 +19,8 @@ export function Navigation() {
     <nav
       role="navigation"
       aria-label="Primary"
-      className="fixed top-0 w-full backdrop-blur-lg z-40"
+      className="fixed top-0 w-full z-40 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95"
       style={{
-        background: "var(--header-gradient-dark-bg)",
         borderBottom: "1px solid rgba(20, 193, 250, 0.25)",
       }}
     >

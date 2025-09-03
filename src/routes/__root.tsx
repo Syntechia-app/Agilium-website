@@ -8,7 +8,7 @@ export const Route = createRootRoute({
     <>
       <HeadContent />
       <Navigation />
-      <div className="pt-16">
+      <div>
         <Outlet />
       </div>
       <Footer />

@@ -28,10 +28,7 @@ export default function AboutPageHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Effects */}
-      <div
-        className="absolute inset-0 "
-        style={{ backgroundImage: "var(--gradient-dark-bg)" }}
-      />
+      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
       <div className="absolute inset-0 bg-[radial-gradient(#2d5b7a_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
       <motion.div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float"

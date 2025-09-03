@@ -28,10 +28,7 @@ export function WhyAgiliumHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Layers */}
-      <div
-        className="absolute inset-0 "
-        style={{ backgroundImage: "var(--gradient-dark-bg)" }}
-      />
+      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
 
       {/* Abstract "Converging Lines" background effect */}
       <div
@@ -41,6 +38,15 @@ export function WhyAgiliumHero() {
             "radial-gradient(circle at center, rgba(0, 170, 255, 0.2) 0%, transparent 40%), repeating-conic-gradient(from 0deg, transparent 0% 1.95deg, var(--brand-electric-blue) 2% 2.05deg)",
           maskImage:
             "radial-gradient(circle at center, white 50%, transparent 80%)",
+        }}
+      />
+
+      <motion.div
+        className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float"
+        style={{
+          backgroundColor:
+            "color-mix(in oklab, var(--brand-cyan-bright) 30%, transparent)",
+          animationDuration: "20s",
         }}
       />
 

@@ -70,7 +70,8 @@ export function Footer() {
                 <Link
                   className="transition-colors rounded"
                   style={{ color: "#e6f2f5" }}
-                  to="/services/digital-solutions"
+                  to="/services/$slug"
+                  params={{ slug: "digital-solutions" }}
                 >
                   Digital Solutions
                 </Link>

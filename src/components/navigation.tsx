@@ -44,6 +44,9 @@ export function Navigation() {
               <Link
                 key={item.href}
                 to={item.href}
+                activeProps={{
+                  className: "border-b-2 border-[color:var(--brand-cyan)]",
+                }}
                 className="transition-colors font-medium rounded focus:outline-none focus-visible:ring-2"
                 style={{ color: "#e6f2f5" }}
               >

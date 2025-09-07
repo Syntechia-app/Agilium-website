@@ -14,6 +14,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services/index'
+import { Route as ServicesSlugRouteImport } from './routes/services/$slug'
 import { Route as ServicesDigitalSolutionsIndexRouteImport } from './routes/services/digital-solutions/index'
 
 const WhyAgiliumRoute = WhyAgiliumRouteImport.update({
@@ -41,6 +42,11 @@ const ServicesIndexRoute = ServicesIndexRouteImport.update({
   path: '/services/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesSlugRoute = ServicesSlugRouteImport.update({
+  id: '/services/$slug',
+  path: '/services/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesDigitalSolutionsIndexRoute =
   ServicesDigitalSolutionsIndexRouteImport.update({
     id: '/services/digital-solutions/',
@@ -53,6 +59,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/why-agilium': typeof WhyAgiliumRoute
+  '/services/$slug': typeof ServicesSlugRoute
   '/services': typeof ServicesIndexRoute
   '/services/digital-solutions': typeof ServicesDigitalSolutionsIndexRoute
 }
@@ -61,6 +68,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/why-agilium': typeof WhyAgiliumRoute
+  '/services/$slug': typeof ServicesSlugRoute
   '/services': typeof ServicesIndexRoute
   '/services/digital-solutions': typeof ServicesDigitalSolutionsIndexRoute
 }
@@ -70,6 +78,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/why-agilium': typeof WhyAgiliumRoute
+  '/services/$slug': typeof ServicesSlugRoute
   '/services/': typeof ServicesIndexRoute
   '/services/digital-solutions/': typeof ServicesDigitalSolutionsIndexRoute
 }
@@ -80,6 +89,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/why-agilium'
+    | '/services/$slug'
     | '/services'
     | '/services/digital-solutions'
   fileRoutesByTo: FileRoutesByTo
@@ -88,6 +98,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/why-agilium'
+    | '/services/$slug'
     | '/services'
     | '/services/digital-solutions'
   id:
@@ -96,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/why-agilium'
+    | '/services/$slug'
     | '/services/'
     | '/services/digital-solutions/'
   fileRoutesById: FileRoutesById
@@ -105,6 +117,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   WhyAgiliumRoute: typeof WhyAgiliumRoute
+  ServicesSlugRoute: typeof ServicesSlugRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
   ServicesDigitalSolutionsIndexRoute: typeof ServicesDigitalSolutionsIndexRoute
 }
@@ -146,6 +159,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/$slug': {
+      id: '/services/$slug'
+      path: '/services/$slug'
+      fullPath: '/services/$slug'
+      preLoaderRoute: typeof ServicesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/digital-solutions/': {
       id: '/services/digital-solutions/'
       path: '/services/digital-solutions'
@@ -161,6 +181,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   WhyAgiliumRoute: WhyAgiliumRoute,
+  ServicesSlugRoute: ServicesSlugRoute,
   ServicesIndexRoute: ServicesIndexRoute,
   ServicesDigitalSolutionsIndexRoute: ServicesDigitalSolutionsIndexRoute,
 }

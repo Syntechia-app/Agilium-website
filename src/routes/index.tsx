@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+    <main className="min-h-screen ">
       <Hero />
       <About />
       <Services />

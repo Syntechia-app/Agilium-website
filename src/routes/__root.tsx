@@ -8,7 +8,12 @@ export const Route = createRootRoute({
     <>
       <HeadContent />
       <Navigation />
-      <div>
+      <div
+        className="test"
+        style={{
+          backgroundImage: "linear-gradient(rgb(0, 0, 0), rgb(26, 26, 26))",
+        }}
+      >
         <Outlet />
       </div>
       <Footer />

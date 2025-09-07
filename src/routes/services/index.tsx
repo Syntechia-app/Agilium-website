@@ -26,7 +26,7 @@ import { ServicesPageHero } from "@/components/services-hero";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+    <main className="min-h-screen ">
       <ServicesPageHero />
       <Services />
     </main>

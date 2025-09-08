@@ -43,7 +43,6 @@ export default function App() {
       <Services />
       <WhyAgilium />
       <Partners />
-      <Contact />
     </main>
   );
 }

@@ -3,7 +3,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import { motion, type Variants } from "framer-motion";
 import { Link } from "@tanstack/react-router";
 import { services } from "@/data/services";
@@ -39,12 +39,75 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our <span className="text-[color:var(--brand-cyan)]">Services</span>
+            What we <span className="text-[color:var(--brand-cyan)]">Do</span>
           </h2>
           <p className="text-xl max-w-4xl mx-auto" style={{ color: "#cfe8ee" }}>
-            Comprehensive technology solutions designed to drive innovation and
-            accelerate your digital transformation
+            “At Agilium, we guide organizations through every step of their
+            digital transformation journey. From strategy to execution, we help
+            clients embrace a digital-first approach, optimize their online
+            presence, and implement the latest technologies—AI, blockchain, IoT,
+            and beyond. Our tailored solutions enhance efficiency, strengthen
+            data security, and empower teams with the tools and training they
+            need to adapt and thrive. By aligning technology with business
+            strategy, we deliver measurable impact and long-term growth..”
           </p>
+          <div className="mt-16">
+            <ul className="space-y-3">
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Help clients shift to a digital-first approach to their business
+                operations.
+              </li>
+
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Develop strategies to optimize clients’ online presence and
+                improve customer engagement.
+              </li>
+
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Implement new digital tools and technologies to enhance
+                productivity and efficiency.
+              </li>
+
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Aid in the adoption of emerging technologies (AI, Blockchain,
+                IoT).
+              </li>
+
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Ensure data security and compliance with industry standards.
+              </li>
+
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Provide training and education for employees to adapt to new
+                processes.
+              </li>
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Streamline supply chains and logistics for better results.
+              </li>
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Deliver customized solutions for unique business needs and
+                challenges.
+              </li>
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Help clients measure and optimize digital transformation
+                outcomes.
+              </li>
+              <li className="flex items-center gap-3 text-blue-200">
+                <span className="text-cyan-400 mr-2 mt-1">•</span>
+                Drive results by aligning digital technologies, data analysis,
+                and business strategy.
+              </li>
+            </ul>
+          </div>
         </motion.div>
 
         <motion.div

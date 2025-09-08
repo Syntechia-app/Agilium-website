@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Eye, Trophy } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 import { motion, type Variants } from "framer-motion";
 
 // Animation variants for the container to orchestrate staggered animations

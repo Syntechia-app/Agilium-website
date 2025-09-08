@@ -80,18 +80,6 @@ export function Partners() {
             </Card>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <p className="text-blue-200">
-            Interested in partnering with us?
-            <a
-              href="#contact"
-              className="text-[color:var(--brand-cyan)] hover:opacity-90 ml-2 underline"
-            >
-              Get in touch
-            </a>
-          </p>
-        </div>
       </div>
     </section>
   );

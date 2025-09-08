@@ -70,7 +70,7 @@ export function Partners() {
                   loading="lazy"
                   width={320}
                   height={48}
-                  className="w-full h-12 object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity"
+                  className="contrast-0 w-full h-12 object-contain mb-4 group-hover:opacity-100 transition-opacity grayscale"
                 />
                 <h3 className="text-white font-semibold mb-2">
                   {partner.name}

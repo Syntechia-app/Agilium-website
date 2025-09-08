@@ -76,6 +76,13 @@ export function WhyAgilium() {
             lasting success in today’s dynamic business landscape.
           </p>
         </div>
+        <div className="mb-6">
+          <img
+            src="/agilium-dev/images/digital.webp"
+            alt="Digital Transformation"
+            className="w-full h-auto rounded-sm"
+          />
+        </div>
 
         {/* Main Reasons */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

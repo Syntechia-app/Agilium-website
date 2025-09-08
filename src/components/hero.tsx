@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
 import { motion, type Variants } from "framer-motion";
-import CountUp from "react-countup";
 
 // Framer Motion variants for staggered animation
 const containerVariants = {

@@ -4,7 +4,6 @@ import { About } from "@/components/about";
 import { Services } from "@/components/services";
 import { WhyAgilium } from "@/components/why-agilium";
 import { Partners } from "@/components/partners";
-import { Contact } from "@/components/contact";
 
 export const Route = createFileRoute("/")({
   head: () => ({

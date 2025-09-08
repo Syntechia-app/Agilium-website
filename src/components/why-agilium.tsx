@@ -7,8 +7,6 @@ import {
   Zap,
   Handshake,
   Leaf,
-  CheckCircle,
-  Star,
 } from "lucide-react";
 
 const reasons = [
@@ -60,18 +58,6 @@ const reasons = [
     description: "Driving innovation that balances growth with responsibility.",
     color: "from-teal-500 to-green-500",
   },
-];
-
-const differentiators = [
-  "End-to-End Capability",
-  "Cross-Industry Experience",
-  "Proven Track Record",
-  "Innovation at Core",
-  "Trusted Partner",
-  "Customer-Centricity",
-  "Accuracy & Quality",
-  "Innovation-Driven Growth",
-  "Sustainability",
 ];
 
 export function WhyAgilium() {

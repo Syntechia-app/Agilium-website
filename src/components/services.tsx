@@ -49,7 +49,7 @@ export function Services() {
             and beyond. Our tailored solutions enhance efficiency, strengthen
             data security, and empower teams with the tools and training they
             need to adapt and thrive. By aligning technology with business
-            strategy, we deliver measurable impact and long-term growth..”
+            strategy, we deliver measurable impact and long-term growth.”
           </p>
           <div className="mt-16">
             <ul className="space-y-3">

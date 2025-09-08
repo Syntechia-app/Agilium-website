@@ -59,14 +59,6 @@ export default function AboutPageHero() {
             Innovation
           </span>
         </motion.h1>
-        <motion.p
-          className="text-lg md:text-xl text-blue-200 leading-relaxed"
-          variants={heroItemVariants}
-        >
-          We are a collective of thinkers, builders, and strategists dedicated
-          to turning ambitious ideas into tangible realities and measurable
-          impact.
-        </motion.p>
       </motion.div>
     </section>
   );

@@ -61,7 +61,7 @@ export function About() {
 
         {/* Mission, Vision, Goals Cards */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
           variants={cardContainerVariants}
         >
           {/* Card 1: Mission */}
@@ -77,11 +77,21 @@ export function About() {
                 </motion.div>
                 <h3 className="text-2xl font-bold text-white mb-4">Mission</h3>
                 <ul className="text-blue-200 space-y-2 text-left">
-                  <li>• Future-ready solutions</li>
-                  <li>• Advanced technology + human-centered design</li>
-                  <li>• Precise execution</li>
-                  <li>• Empower innovation & scalability</li>
-                  <li>• Lead in a fast-changing digital world</li>
+                  <li>
+                    • Empower governments, enterprises, and communities with
+                    innovative digital solutions.
+                  </li>
+                  <li>
+                    • Bridge the physical and digital worlds through
+                    transformative technology.
+                  </li>
+                  <li>• Turn bold ideas into practical, measurable outcomes</li>
+                  <li>
+                    • Drive efficiency, connectivity, and sustainable growth.
+                  </li>
+                  <li>
+                    • Deliver impact across Saudi Arabia and the wider region.
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -100,71 +110,30 @@ export function About() {
                 </motion.div>
                 <h3 className="text-2xl font-bold text-white mb-4">Vision</h3>
                 <ul className="text-blue-200 space-y-2 text-left">
-                  <li>• Driving force of transformative innovation</li>
-                  <li>• Shaping a smarter, more connected future</li>
-                  <li>• Turning bold ideas into impactful realities</li>
-                  <li>• Bridging digital and physical spaces</li>
+                  <li>
+                    • Shape a smarter, more connected future for governments,
+                    enterprises, and societies.
+                  </li>
+                  <li>
+                    • Be the driving force of transformative innovation in Saudi
+                    Arabia and the GCC.
+                  </li>
+                  <li>
+                    • Bridge digital and physical spaces to create seamless
+                    human experiences.
+                  </li>
+                  <li>
+                    • Turn bold ideas into impactful realities that inspire
+                    progress.
+                  </li>
+                  <li>
+                    • Lead with agility, creativity, and responsibility toward a
+                    sustainable tomorrow.
+                  </li>
                 </ul>
               </CardContent>
             </Card>
           </motion.div>
-
-          {/* Card 3: Goals */}
-          <motion.div
-            variants={itemVariants}
-            whileHover={{ y: -8, scale: 1.03 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
-              <CardContent className="p-8 text-center">
-                <motion.div whileHover={{ scale: 1.1 }}>
-                  <Trophy className="w-12 h-12 text-[color:var(--brand-cyan)] mx-auto mb-4" />
-                </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-4">Goals</h3>
-                <ul className="text-blue-200 space-y-2 text-left">
-                  <li>• Innovation – Pioneering solutions</li>
-                  <li>• Quality – Excellence in every project</li>
-                  <li>• Integrity – Transparency & honesty</li>
-                  <li>• Collaboration – Strong partnerships</li>
-                  <li>• Sustainability – Eco-friendly practices</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </motion.div>
-
-        {/* Key Features */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          variants={cardContainerVariants}
-        >
-          {[
-            {
-              title: "Integrated Expertise",
-              text: "Across digital, infrastructure, AI, and IoT domains",
-            },
-            {
-              title: "Proven Track Record",
-              text: "High-impact projects across industries",
-            },
-            {
-              title: "Agile Approach",
-              text: "Flexible and tailored to client goals",
-            },
-          ].map((feature, index) => (
-            <motion.div
-              key={index}
-              className="bg-gradient-to-br from-blue-800/30 to-blue-900/30 p-6 rounded-xl border border-blue-700/30 backdrop-blur-sm transition-colors duration-300 hover:border-cyan-400/50"
-              variants={itemVariants}
-              whileHover={{ y: -5 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <h4 className="text-lg font-semibold text-[color:var(--brand-cyan)] mb-2">
-                {feature.title}
-              </h4>
-              <p className="text-blue-200">{feature.text}</p>
-            </motion.div>
-          ))}
         </motion.div>
       </div>
     </motion.section>

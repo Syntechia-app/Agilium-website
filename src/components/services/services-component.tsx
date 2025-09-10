@@ -47,7 +47,10 @@ export function ServicesComponent() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What we <span className="text-[color:var(--brand-cyan)]">Do</span>
           </h2>
-          <p className="text-xl max-w-4xl mx-auto" style={{ color: "#cfe8ee" }}>
+          <p
+            className="text-xl max-w-4xl mx-auto text-left"
+            style={{ color: "#cfe8ee" }}
+          >
             “At Agilium, we guide organizations through every step of their
             digital transformation journey. From strategy to execution, we help
             clients embrace a digital-first approach, optimize their online

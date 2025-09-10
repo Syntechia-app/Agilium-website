@@ -112,13 +112,13 @@ export const AboutComponent: FC = () => {
             About{" "}
             <span className="text-[color:var(--brand-cyan)]">Agilium</span>
           </h2>
-          <p className="text-lg text-blue-200 max-w-4xl mx-auto leading-relaxed mb-4">
+          <p className="text-lg text-blue-200 max-w-4xl mx-auto leading-relaxed mb-4 text-left">
             AGILIUM is a multidisciplinary innovation company that transforms
             ambitious visions into measurable impact. We combine cutting-edge
             technology, human-centered design, and strategic expertise to
             deliver solutions that scale and endure.
           </p>
-          <p className="text-lg text-blue-200 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-blue-200 max-w-4xl mx-auto leading-relaxed text-left">
             From Digital Platforms and Intelligent Systems to Future-Ready
             Strategies, we help organizations innovate, adapt, and lead in an
             ever-evolving digital world.

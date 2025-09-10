@@ -75,14 +75,6 @@ export function WhyAgiliumHero() {
           </span>
           .
         </motion.h1>
-
-        <motion.p
-          className="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed"
-          variants={itemVariants}
-        >
-          We combine deep expertise with a collaborative spirit to transform
-          your vision into reality and ensure your long-term success.
-        </motion.p>
       </motion.div>
     </section>
   );

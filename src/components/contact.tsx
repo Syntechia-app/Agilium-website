@@ -259,7 +259,7 @@ export function Contact() {
                   <div>
                     <h3 className="text-white font-semibold">Visit Us</h3>
                     <p className="text-blue-200">
-                      123 D Tower Drive, TC 12345
+                      3665 Yanbu, 7824 Dhahrat Laban Dist. 13784
                       <br />
                       Riyadh, Saudi Arabia
                     </p>
@@ -277,12 +277,8 @@ export function Contact() {
                 <div className="space-y-2 text-blue-200">
                   <div className="flex justify-between">
                     <span>Saturday - Thursday</span>
-                    <span>9:00 AM - 5:00 PM</span>
+                    <span>8:00 AM - 5:00 PM</span>
                   </div>
-                  {/* <div className="flex justify-between">
-                    <span>Friday</span>
-                    <span>10:00 AM - 4:00 PM</span>
-                  </div> */}
                   <div className="flex justify-between">
                     <span>Friday</span>
                     <span>Closed</span>

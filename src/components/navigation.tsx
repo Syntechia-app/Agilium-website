@@ -10,8 +10,8 @@ export function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
     { href: "/why-agilium", label: "Why Agilium" },
+    { href: "/services", label: "Services" },
     { href: "/contact", label: "Contact" },
   ];
 

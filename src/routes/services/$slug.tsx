@@ -32,15 +32,17 @@ function Service() {
 
   if (!service) {
     return (
-      <main className="min-h-[80vh] flex">
+      <main className="min-h-[80vh] flex bg-background">
+        {" "}
+        {/* Main background set via CSS variable */}
         <div className="pt-16 flex flex-col items-center justify-center flex-1">
           <section className="py-20 px-4">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              <div className="text-center mb-16 text-gray-900">
+                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                   Page Not Found
                 </h1>
-                <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+                <p className="text-xl text-gray-800 max-w-4xl mx-auto">
                   The page you are looking for does not exist.
                 </p>
               </div>

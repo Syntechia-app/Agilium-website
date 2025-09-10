@@ -28,7 +28,7 @@ export function ServicesPageHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background: Base Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#b1c7e9]/95 via-[#759cd8]/90 to-[#b1c7e9]/95" />
       <motion.div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float"
         style={{
@@ -84,13 +84,13 @@ export function ServicesPageHero() {
 
       {/* Foreground Content */}
       <motion.div
-        className="relative z-10 text-center max-w-5xl mx-auto"
+        className="relative z-10 text-center max-w-5xl mx-auto text-gray-900"
         variants={containerVariants}
         initial="hidden"
         animate="visible" // Animate on page load
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
+          className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
           variants={itemVariants}
         >
           Engineering Your{" "}
@@ -98,7 +98,7 @@ export function ServicesPageHero() {
             className="bg-clip-text text-transparent"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #e6faff, var(--brand-cyan-bright))",
+                "linear-gradient(90deg, #1a1a1a, var(--brand-blue-glow))",
             }}
           >
             Digital Future
@@ -106,7 +106,7 @@ export function ServicesPageHero() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed"
           variants={itemVariants}
         >
           From strategy to execution, we deliver a comprehensive suite of

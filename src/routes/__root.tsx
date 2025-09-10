@@ -8,7 +8,9 @@ export const Route = createRootRoute({
     <>
       <HeadContent />
       <Navigation />
-      <div className="bg-white">
+      <div className="bg-background">
+        {" "}
+        {/* Changed to use the CSS variable */}
         <Outlet />
       </div>
       <Footer />

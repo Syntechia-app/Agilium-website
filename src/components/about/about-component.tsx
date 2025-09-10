@@ -62,18 +62,18 @@ interface FeatureCardProps {
 const FeatureCard: FC<FeatureCardProps> = ({ icon, title, description }) => (
   <motion.div
     variants={itemVariants}
-    className="bg-blue-900/40 p-6 rounded-lg border border-blue-700/50 text-center"
+    className="bg-white/70 p-6 rounded-lg border border-blue-300 text-center"
   >
     <div className="flex justify-center mb-4">
-      <div className="p-3 bg-blue-900/80 rounded-full">
+      <div className="p-3 bg-blue-100 rounded-full">
         {icon &&
           typeof icon === "object" &&
           "type" in icon &&
           (icon as React.ReactElement)}
       </div>
     </div>
-    <h4 className="text-xl font-bold text-white mb-2">{title}</h4>
-    <p className="text-blue-200">{description}</p>
+    <h4 className="text-xl font-bold text-gray-900 mb-2">{title}</h4>
+    <p className="text-gray-800">{description}</p>
   </motion.div>
 );
 
@@ -99,7 +99,7 @@ export const AboutComponent: FC = () => {
   return (
     <motion.section
       id="about"
-      className="py-20 px-4 bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A] overflow-hidden"
+      className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -107,18 +107,20 @@ export const AboutComponent: FC = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Section 1: About Agilium */}
-        <motion.div className="text-center mb-12" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About{" "}
-            <span className="text-[color:var(--brand-cyan)]">Agilium</span>
+        <motion.div
+          className="text-center mb-12 text-gray-900"
+          variants={itemVariants}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            About <span className="text-blue-700">Agilium</span>
           </h2>
-          <p className="text-lg text-blue-200 max-w-4xl mx-auto leading-relaxed mb-4 text-left">
+          <p className="text-lg text-gray-800 max-w-4xl mx-auto leading-relaxed mb-4 text-left">
             AGILIUM is a multidisciplinary innovation company that transforms
             ambitious visions into measurable impact. We combine cutting-edge
             technology, human-centered design, and strategic expertise to
             deliver solutions that scale and endure.
           </p>
-          <p className="text-lg text-blue-200 max-w-4xl mx-auto leading-relaxed text-left">
+          <p className="text-lg text-gray-800 max-w-4xl mx-auto leading-relaxed text-left">
             From Digital Platforms and Intelligent Systems to Future-Ready
             Strategies, we help organizations innovate, adapt, and lead in an
             ever-evolving digital world.
@@ -131,27 +133,29 @@ export const AboutComponent: FC = () => {
           variants={cardContainerVariants}
         >
           <FeatureCard
-            icon={<Layers className="w-8 h-8 text-[color:var(--brand-cyan)]" />}
+            icon={<Layers className="w-8 h-8 text-blue-600" />}
             title="Integrated Expertise"
             description="Across digital transformation, infrastructure, AI, IoT, and data analytics & visualization."
           />
           <FeatureCard
-            icon={<Award className="w-8 h-8 text-[color:var(--brand-cyan)]" />}
+            icon={<Award className="w-8 h-8 text-blue-600" />}
             title="Proven Track Record"
             description="Of delivering high-impact projects across diverse industries."
           />
           <FeatureCard
-            icon={<Zap className="w-8 h-8 text-[color:var(--brand-cyan)]" />}
+            icon={<Zap className="w-8 h-8 text-blue-600" />}
             title="Agile & Flexible"
             description="Approach, tailored to meet each client’s unique goals and challenges."
           />
         </motion.div>
 
         {/* Section 2: Mission & Vision */}
-        <motion.div className="text-center my-16" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Mission &{" "}
-            <span className="text-[color:var(--brand-cyan)]">Vision</span>
+        <motion.div
+          className="text-center my-16 text-gray-900"
+          variants={itemVariants}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Mission & <span className="text-blue-700">Vision</span>
           </h2>
         </motion.div>
 
@@ -165,15 +169,15 @@ export const AboutComponent: FC = () => {
             whileHover={{ y: -8, scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+            <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
               <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-4 text-gray-900">
                   <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                    <Target className="w-12 h-12 text-[color:var(--brand-cyan)]" />
+                    <Target className="w-12 h-12 text-blue-600" />
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-white">Mission</h3>
+                  <h3 className="text-3xl font-bold text-gray-900">Mission</h3>
                 </div>
-                <p className="text-blue-200 mb-6">
+                <p className="text-gray-800 mb-6">
                   At AGILIUM, our mission is to empower governments,
                   enterprises, and communities with innovative digital solutions
                   that bridge the physical and digital worlds. We transform bold
@@ -181,10 +185,10 @@ export const AboutComponent: FC = () => {
                   connectivity, and sustainable growth across Saudi Arabia and
                   the wider region.
                 </p>
-                <ul className="text-blue-200 space-y-2 text-left">
+                <ul className="text-gray-800 space-y-2 text-left">
                   {missions.map((mission, index) => (
                     <li key={index} className="flex gap-2">
-                      <SquareCheckBig className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                      <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />
                       {mission}
                     </li>
                   ))}
@@ -199,25 +203,25 @@ export const AboutComponent: FC = () => {
             whileHover={{ y: -8, scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+            <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
               <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-4 text-gray-900">
                   <motion.div whileHover={{ scale: 1.1, rotate: -5 }}>
-                    <Eye className="w-12 h-12 text-[color:var(--brand-cyan)]" />
+                    <Eye className="w-12 h-12 text-blue-600" />
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-white">Vision</h3>
+                  <h3 className="text-3xl font-bold text-gray-900">Vision</h3>
                 </div>
-                <p className="text-blue-200 mb-6">
+                <p className="text-gray-800 mb-6">
                   At Agilium, our vision is to shape a smarter, more connected
                   future where transformative innovation bridges the digital and
                   physical worlds. We aspire to be the driving force that turns
                   bold ideas into impactful realities, inspiring progress and
                   sustainable growth across Saudi Arabia and the wider region.
                 </p>
-                <ul className="text-blue-200 space-y-2 text-left">
+                <ul className="text-gray-800 space-y-2 text-left">
                   {visions.map((vision, index) => (
                     <li key={index} className="flex gap-2">
-                      <SquareCheckBig className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                      <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />
                       {vision}
                     </li>
                   ))}
@@ -228,10 +232,12 @@ export const AboutComponent: FC = () => {
         </motion.div>
 
         {/* Section 3: Values & Goals */}
-        <motion.div className="text-center my-16" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Values &{" "}
-            <span className="text-[color:var(--brand-cyan)]">Goals</span>
+        <motion.div
+          className="text-center my-16 text-gray-900"
+          variants={itemVariants}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Values & <span className="text-blue-700">Goals</span>
           </h2>
         </motion.div>
 
@@ -245,48 +251,48 @@ export const AboutComponent: FC = () => {
             whileHover={{ y: -8, scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+            <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
               <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-4 text-gray-900">
                   <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                    <Gem className="w-12 h-12 text-[color:var(--brand-cyan)]" />
+                    <Gem className="w-12 h-12 text-blue-600" />
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-white">Values</h3>
+                  <h3 className="text-3xl font-bold text-gray-900">Values</h3>
                 </div>
-                <p className="text-blue-200 mb-6">
+                <p className="text-gray-800 mb-6">
                   At Agilium, our values guide every decision, partnership, and
                   solution we deliver. Rooted in innovation, integrity, and
                   collaboration, our values reflect our commitment to creating
                   measurable impact and driving excellence across everything we
                   do.
                 </p>
-                <ul className="text-blue-200 space-y-3 text-left">
+                <ul className="text-gray-800 space-y-3 text-left">
                   <li>
-                    <strong className="text-white">Innovation: </strong>
+                    <strong className="text-gray-800">Innovation: </strong>
                     Continuously pushing boundaries with creative and
                     transformative solutions.
                   </li>
                   <li>
-                    <strong className="text-white">Integrity: </strong>
+                    <strong className="text-gray-800">Integrity: </strong>
                     Operating with transparency, trust, and responsibility.
                   </li>
                   <li>
-                    <strong className="text-white">Agility: </strong> Adapting
-                    quickly to changing needs and delivering with speed and
-                    precision.
+                    <strong className="text-gray-800">Agility: </strong>{" "}
+                    Adapting quickly to changing needs and delivering with speed
+                    and precision.
                   </li>
                   <li>
-                    <strong className="text-white">Impact: </strong> Driving
+                    <strong className="text-gray-800">Impact: </strong> Driving
                     measurable value for governments, enterprises, and
                     communities.
                   </li>
                   <li>
-                    <strong className="text-white">Collaboration: </strong>
+                    <strong className="text-gray-800">Collaboration: </strong>
                     Building strong partnerships to co-create sustainable
                     outcomes.
                   </li>
                   <li>
-                    <strong className="text-white">Excellence: </strong>
+                    <strong className="text-gray-800">Excellence: </strong>
                     Upholding the highest standards in every project and
                     interaction.
                   </li>
@@ -301,22 +307,22 @@ export const AboutComponent: FC = () => {
             whileHover={{ y: -8, scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+            <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
               <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-4 text-gray-900">
                   <motion.div whileHover={{ scale: 1.1, rotate: -5 }}>
-                    <Flag className="w-12 h-12 text-[color:var(--brand-cyan)]" />
+                    <Flag className="w-12 h-12 text-blue-600" />
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-white">Goals</h3>
+                  <h3 className="text-3xl font-bold text-gray-900">Goals</h3>
                 </div>
-                <p className="text-blue-200 mb-6">
+                <p className="text-gray-800 mb-6">
                   Our goals reflect our vision to be a catalyst for digital
                   transformation in Saudi Arabia and the wider GCC. Each goal
                   builds upon our mission to bridge digital and physical worlds
                   while driving intelligence, innovation, and leadership that
                   endure over time.
                 </p>
-                <ul className="text-blue-200 space-y-2 text-left">
+                <ul className="text-gray-800 space-y-2 text-left">
                   <li>
                     • Empower Governments & Enterprises with cutting-edge
                     digital solutions.

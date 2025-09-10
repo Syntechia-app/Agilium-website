@@ -26,7 +26,9 @@ import { Partners } from "@/components/partners";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
+      {" "}
+      {/* Main background set via CSS variable */}
       <Contact />
       <Partners />
     </main>

@@ -26,7 +26,9 @@ import { ServicesPageHero } from "@/components/services/services-hero";
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen bg-background">
+      {" "}
+      {/* Main background set via CSS variable */}
       <ServicesPageHero />
       <Services />
     </main>

@@ -19,9 +19,9 @@ export function Navigation() {
     <nav
       role="navigation"
       aria-label="Primary"
-      className="fixed top-0 w-full z-40 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95"
+      className="fixed top-0 w-full z-40 bg-gradient-to-tr from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95"
       style={{
-        borderBottom: "1px solid rgba(20, 193, 250, 0.25)",
+        borderBottom: "1px solid rgba(59, 130, 246, 0.25)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4">
@@ -35,7 +35,7 @@ export function Navigation() {
               height={32}
               className="w-8 h-8"
             />
-            <span className="text-white font-bold text-xl">AGILIUM</span>
+            <span className="text-gray-900 font-bold text-xl">AGILIUM</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,15 +45,14 @@ export function Navigation() {
                 key={item.href}
                 to={item.href}
                 activeProps={{
-                  className: "border-b-2 border-[color:var(--brand-cyan)]",
+                  className: "border-b-2 border-blue-600",
                 }}
-                className="transition-colors font-medium rounded focus:outline-none focus-visible:ring-2"
-                style={{ color: "#e6f2f5" }}
+                className="transition-colors font-medium rounded focus:outline-none focus-visible:ring-2 text-gray-800 hover:text-blue-700"
               >
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-[color:var(--brand-blue)] hover:bg-[color:var(--brand-cyan)] text-white shadow-md hover:shadow-lg focus-visible:ring-2 focus-visible:ring-[color:var(--brand-cyan)]">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg focus-visible:ring-2 focus-visible:ring-blue-500">
               Get Started
             </Button>
           </div>
@@ -62,7 +61,7 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden text-white"
+            className="md:hidden text-gray-800 hover:text-gray-900"
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
             aria-controls="primary-mobile-menu"
@@ -77,22 +76,23 @@ export function Navigation() {
           <div
             id="primary-mobile-menu"
             className="md:hidden py-4"
-            style={{ borderTop: "1px solid rgba(20, 193, 250, 0.25)" }}
+            style={{ borderTop: "1px solid rgba(59, 130, 246, 0.25)" }}
           >
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="transition-colors font-medium px-4 py-2"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors font-medium px-4 py-2 text-gray-800 hover:text-blue-700"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
               <div className="px-4">
-                <Button className="w-full text-white">Get Started</Button>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                  Get Started
+                </Button>
               </div>
             </div>
           </div>

@@ -51,26 +51,26 @@
   --brand-coral: var(--brand-red-accent);
   --brand-orange: var(--brand-warm-red-2);
 
-  /* System tokens mapped to brand */
-  --background: var(--neutral-soft-gray);
-  --foreground: var(--neutral-charcoal);
+  /* System tokens mapped to brand - LIGHT THEME */
+  --background: #edf2fa; /* Light First Snow */
+  --foreground: #1a1a1a; /* Dark charcoal for text */
   --card: var(--neutral-white);
-  --card-foreground: var(--neutral-charcoal);
+  --card-foreground: #1a1a1a; /* Dark charcoal for text on cards */
   --popover: var(--neutral-white);
-  --popover-foreground: var(--neutral-charcoal);
+  --popover-foreground: #1a1a1a; /* Dark charcoal for popover text */
   --primary: var(--brand-blue-glow);
   --primary-foreground: var(--neutral-white);
-  --secondary: var(--neutral-soft-gray);
-  --secondary-foreground: var(--neutral-charcoal);
-  --muted: var(--neutral-soft-gray);
-  --muted-foreground: #7a7a7a;
-  --accent: var(--brand-red-accent);
+  --secondary: #e0e7ff; /* light indigo */
+  --secondary-foreground: #1a1a1a; /* Dark charcoal for secondary text */
+  --muted: #e0e7ff; /* light indigo */
+  --muted-foreground: #4b5563; /* Tailwind gray-600 */
+  --accent: #3b82f6; /* Tailwind blue-500 */
   --accent-foreground: var(--neutral-white);
-  --destructive: var(--brand-red-accent);
+  --destructive: #EF4444; /* Tailwind red-500 */
   --destructive-foreground: var(--neutral-white);
-  --border: #d9d9d9;
-  --input: #d9d9d9;
-  --ring: var(--brand-cyan-bright);
+  --border: #d1d5db; /* Tailwind gray-300 */
+  --input: #e0e7ff; /* Light indigo for input background */
+  --ring: var(--brand-blue-glow); /* Blue glow for ring focus */
   --chart-1: var(--brand-blue-glow);
   --chart-2: var(--brand-cyan-bright);
   --chart-3: var(--brand-electric-blue);
@@ -78,21 +78,22 @@
   --chart-5: var(--brand-warm-red-2);
   --radius: 0.625rem;
   --sidebar: var(--neutral-white);
-  --sidebar-foreground: var(--neutral-charcoal);
+  --sidebar-foreground: #1a1a1a; /* Dark charcoal for sidebar text */
   --sidebar-primary: var(--brand-blue-glow);
   --sidebar-primary-foreground: var(--neutral-white);
-  --sidebar-accent: var(--neutral-soft-gray);
-  --sidebar-accent-foreground: var(--neutral-charcoal);
-  --sidebar-border: #e6e6e6;
-  --sidebar-ring: var(--brand-cyan-bright);
+  --sidebar-accent: #e0e7ff; /* Light indigo */
+  --sidebar-accent-foreground: #1a1a1a; /* Dark charcoal */
+  --sidebar-border: #d1d5db; /* Tailwind gray-300 */
+  --sidebar-ring: var(--brand-blue-glow);
 
   /* Gradients */
   --gradient-brand: linear-gradient(135deg, #ff5953, #0cbfd8, #01e7f6);
-  --gradient-dark-bg: linear-gradient(135deg, #000000, #1a1a1a, #0cbfd8);
-  --header-gradient-dark-bg: linear-gradient(135deg, #000000, #1a1a1a);
+  --gradient-dark-bg: linear-gradient(135deg, #b1c7e9, #759cd8, #3971c7); /* Adjusted for light theme */
+  --header-gradient-dark-bg: linear-gradient(135deg, #edf2fa, #b1c7e9); /* Adjusted for light theme */
 }
 
 .dark {
+  /* Keep dark theme as original or adjust as needed for dual theme support */
   --background: var(--neutral-charcoal);
   --foreground: var(--neutral-white);
   --card: var(--neutral-charcoal);
@@ -188,5 +189,3 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-gray-800 rounded-full; /* Styles the scrollbar thumb */
 }
-
-

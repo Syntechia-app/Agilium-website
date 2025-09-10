@@ -177,16 +177,16 @@ export function Chatbot(props: ChatbotProps = {}) {
     onlineBadgeText = "Online",
     placeholder = "Type your message...",
     theme = {
-      backgroundFrom: "var(--brand-ink)",
-      backgroundTo: "#0B1B3A",
-      border: "rgba(29,78,216,0.5)",
-      userBubbleBg: "var(--brand-blue)",
+      backgroundFrom: "#b1c7e9", // Adjusted for light theme
+      backgroundTo: "#759cd8", // Adjusted for light theme
+      border: "rgba(59, 130, 246, 0.5)", // Tailwind blue-500/50
+      userBubbleBg: "#3b82f6", // Tailwind blue-500
       userText: "#ffffff",
-      botBubbleBg: "rgba(30,64,175,0.5)",
-      botText: "#bfdbfe",
-      primaryButtonBg: "var(--brand-blue)",
-      primaryButtonHoverBg: "var(--brand-cyan)",
-      highlight: "var(--brand-cyan)",
+      botBubbleBg: "#e0e7ff", // Tailwind indigo-100
+      botText: "#1f2937", // Tailwind gray-800
+      primaryButtonBg: "#3b82f6", // Tailwind blue-500
+      primaryButtonHoverBg: "#2563eb", // Tailwind blue-600
+      highlight: "#3b82f6", // Tailwind blue-500
       typingDot: "#93c5fd",
     },
   } = props;
@@ -308,7 +308,7 @@ export function Chatbot(props: ChatbotProps = {}) {
           style={{
             height: typeof height === "number" ? `${height}px` : height,
             maxHeight,
-            backgroundColor: `linear-gradient(135deg, ${theme.backgroundFrom}F2, ${theme.backgroundTo}F2)`,
+            backgroundColor: `linear-gradient(135deg, ${theme.backgroundFrom}, ${theme.backgroundTo})`,
             borderColor: theme.border,
             borderWidth: 1,
             top:
@@ -328,7 +328,7 @@ export function Chatbot(props: ChatbotProps = {}) {
           ref={cardRef as any}
         >
           <CardHeader className="pb-3 sticky top-0 z-10 bg-transparent backdrop-blur-sm">
-            <CardTitle className="flex items-center gap-2 text-white">
+            <CardTitle className="flex items-center gap-2 text-gray-900">
               <img src={logo} alt="Agilium Logo" className="w-8 h-8" />
               {headerTitle}
               <span className="text-xs bg-green-500 text-white px-2 py-1 rounded-full ml-auto">
@@ -339,7 +339,7 @@ export function Chatbot(props: ChatbotProps = {}) {
                 <Button
                   size="sm"
                   variant="ghost"
-                  className="ml-2 text-blue-200 cursor-grab"
+                  className="ml-2 text-blue-600 cursor-grab"
                   aria-label="Drag chat window"
                   onMouseDown={onDragStart}
                 >
@@ -350,7 +350,7 @@ export function Chatbot(props: ChatbotProps = {}) {
                 size="icon"
                 variant="ghost"
                 aria-label="Close chat"
-                className="ml-1 text-blue-200 hover:text-white"
+                className="ml-1 text-blue-600 hover:text-blue-800"
                 onClick={() => setIsOpen(false)}
               >
                 <X className="w-4 h-4" />
@@ -389,7 +389,7 @@ export function Chatbot(props: ChatbotProps = {}) {
                     <p className="text-sm leading-relaxed">{message.text}</p>
                   </div>
                   <span
-                    className={`text-[10px] opacity-70 mt-1 ${message.isBot ? "text-blue-200" : "text-blue-100"}`}
+                    className={`text-[10px] opacity-70 mt-1 ${message.isBot ? "text-gray-800" : "text-gray-500"}`}
                   >
                     {message.timestamp.toLocaleTimeString([], {
                       hour: "2-digit",
@@ -423,7 +423,7 @@ export function Chatbot(props: ChatbotProps = {}) {
                       ></span>
                     </span>
                   </div>
-                  <span className="text-[10px] opacity-70 mt-1 text-blue-200">
+                  <span className="text-[10px] opacity-70 mt-1 text-gray-800">
                     typing…
                   </span>
                 </div>
@@ -434,14 +434,14 @@ export function Chatbot(props: ChatbotProps = {}) {
             {/* Quick Replies */}
             {showQuickReplies && messages.length === 1 && (
               <div className="mb-4">
-                <p className="text-blue-200 text-xs mb-2">Quick replies:</p>
+                <p className="text-gray-800 text-xs mb-2">Quick replies:</p>
                 <div className="flex flex-wrap gap-2">
                   {quickReplies.map((reply, index) => (
                     <Button
                       key={index}
                       size="sm"
                       onClick={() => handleQuickReply(reply)}
-                      className="text-xs border-[color:var(--brand-cyan)]/50 text-blue-200 hover:bg-[color:var(--brand-cyan)]/10"
+                      className="text-xs border-blue-400 text-blue-700 hover:bg-blue-100 bg-white"
                     >
                       {reply}
                     </Button>
@@ -451,13 +451,13 @@ export function Chatbot(props: ChatbotProps = {}) {
             )}
 
             {/* Input */}
-            <div className="flex items-center gap-2 p-2 rounded-full bg-blue-900/30 border border-blue-700/50">
+            <div className="flex items-center gap-2 p-2 rounded-full bg-blue-100 border border-blue-300">
               <Input
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
                 placeholder={placeholder}
-                className="bg-transparent border-0 focus-visible:ring-0 text-white placeholder:text-blue-300"
+                className="bg-transparent border-0 focus-visible:ring-0 text-gray-800 placeholder:text-gray-500"
                 autoFocus={display === "dialog"}
               />
               <Button

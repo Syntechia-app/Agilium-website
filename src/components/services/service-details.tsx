@@ -46,7 +46,7 @@ export default function Service({ service }: Props) {
       <div className="pt-16">
         <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
           {/* Background Layers */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#b1c7e9]/95 via-[#759cd8]/90 to-[#b1c7e9]/95" />
 
           {/* Abstract "Converging Lines" background effect */}
           <div
@@ -70,13 +70,13 @@ export default function Service({ service }: Props) {
 
           {/* Foreground Content */}
           <motion.div
-            className="relative z-10 text-center max-w-5xl mx-auto"
+            className="relative z-10 text-center max-w-5xl mx-auto text-gray-900"
             variants={containerVariants}
             initial="hidden"
             animate="visible" // Animate on page load
           >
             <motion.h1
-              className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight"
+              className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight leading-tight"
               variants={itemVariants}
             >
               <div className="text-center">
@@ -85,26 +85,26 @@ export default function Service({ service }: Props) {
                 >
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                   {service.title}
                 </h1>
               </div>
             </motion.h1>
 
             <motion.p
-              className="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed"
               variants={itemVariants}
             >
               {service.description}
             </motion.p>
           </motion.div>
         </section>
-        <section className="py-20 px-4">
+        <section className="py-20 px-4 bg-gradient-to-b from-[#759cd8] to-[#3971c7]">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+              <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">
+                  <CardTitle className="text-2xl text-gray-900">
                     Our Services
                   </CardTitle>
                 </CardHeader>
@@ -113,9 +113,9 @@ export default function Service({ service }: Props) {
                     {service.features.map((service, index) => (
                       <li
                         key={index}
-                        className="flex items-center gap-3 text-blue-200"
+                        className="flex items-center gap-3 text-gray-800"
                       >
-                        <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
                         {service}
                       </li>
                     ))}
@@ -123,9 +123,9 @@ export default function Service({ service }: Props) {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+              <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">
+                  <CardTitle className="text-2xl text-gray-900">
                     Key Benefits
                   </CardTitle>
                 </CardHeader>
@@ -134,9 +134,9 @@ export default function Service({ service }: Props) {
                     {service.benefits.map((benefit, index) => (
                       <li
                         key={index}
-                        className="flex items-center gap-3 text-blue-200"
+                        className="flex items-center gap-3 text-gray-800"
                       >
-                        <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
                         {benefit}
                       </li>
                     ))}
@@ -147,7 +147,7 @@ export default function Service({ service }: Props) {
 
             <div className="text-center">
               <Link to="/contact">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white px-8 py-4 text-lg font-semibold rounded-full">
+                <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg font-semibold rounded-full">
                   Get Started with Digital Solutions
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>

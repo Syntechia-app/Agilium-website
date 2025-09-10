@@ -36,7 +36,9 @@ export const Route = createFileRoute("/")({
 
 export default function App() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen bg-background">
+      {" "}
+      {/* Main background set via CSS variable */}
       <Hero />
       <About />
       <ServicesComponent />

@@ -25,7 +25,9 @@ export const Route = createFileRoute("/why-agilium")({
 
 export default function WhyAgiliumPage() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen bg-background">
+      {" "}
+      {/* Main background set via CSS variable */}
       <WhyAgiliumHero />
       <WhyAgilium />
     </main>

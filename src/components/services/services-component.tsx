@@ -36,21 +36,21 @@ const services = [
 export function ServicesComponent() {
   return (
     <motion.section
-      className="py-20 px-4 bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A]"
+      className="py-20 px-4 bg-gradient-to-b from-[#edf2fa] to-[#b1c7e9]"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }} // Animate when 10% of the section is visible
     >
       <div className="max-w-7xl mx-auto">
-        <motion.div className="text-center mb-16" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            What we <span className="text-[color:var(--brand-cyan)]">Do</span>
+        <motion.div
+          className="text-center mb-16 text-gray-900"
+          variants={itemVariants}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            What we <span className="text-blue-700">Do</span>
           </h2>
-          <p
-            className="text-xl max-w-4xl mx-auto text-left"
-            style={{ color: "#cfe8ee" }}
-          >
+          <p className="text-xl max-w-4xl mx-auto text-left text-gray-800">
             “At Agilium, we guide organizations through every step of their
             digital transformation journey. From strategy to execution, we help
             clients embrace a digital-first approach, optimize their online
@@ -69,15 +69,15 @@ export function ServicesComponent() {
         transition={{ type: "spring", stiffness: 300 }}
         className="max-w-7xl mx-auto"
       >
-        <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+        <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
           <CardContent className="p-8">
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li
                   key={index}
-                  className="flex items-start gap-3 text-blue-200"
+                  className="flex items-start gap-3 text-gray-800"
                 >
-                  <CheckSquare className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                  <CheckSquare className="w-5 h-5 text-blue-500 flex-shrink-0" />
                   {service}
                 </li>
               ))}

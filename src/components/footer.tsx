@@ -5,10 +5,10 @@ import { Facebook, Linkedin, Twitter } from "lucide-react";
 export function Footer() {
   return (
     <footer
-      className="text-blue-200"
+      className="text-gray-800"
       style={{
-        backgroundImage: "linear-gradient(180deg, #000000, #1a1a1a)",
-        borderTop: "1px solid rgba(20, 193, 250, 0.25)",
+        backgroundImage: "linear-gradient(180deg, #b1c7e9, #759cd8)",
+        borderTop: "1px solid rgba(59, 130, 246, 0.25)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -23,27 +23,27 @@ export function Footer() {
                 className="w-16 h-16"
               />
               <div className="flex items-baseline gap-2">
-                <h3 className="text-white font-bold text-xl">AGILIUM</h3>
+                <h3 className="text-gray-900 font-bold text-xl">AGILIUM</h3>
               </div>
             </div>
             <p className="text-sm">Where Innovation Meets Success</p>
             <div className="flex gap-3 mt-4 gap-x-6" aria-label="Social links">
               <a
-                className="transition-colors hover:text-[color:var(--brand-cyan)]"
+                className="transition-colors hover:text-blue-700"
                 href="#"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-8 h-8" />
               </a>
               <a
-                className="transition-colors hover:text-[color:var(--brand-cyan)]"
+                className="transition-colors hover:text-blue-700"
                 href="#"
                 aria-label="Twitter"
               >
                 <Twitter className="w-8 h-8" />
               </a>
               <a
-                className="transition-colors hover:text-[color:var(--brand-cyan)]"
+                className="transition-colors hover:text-blue-700"
                 href="#"
                 aria-label="Facebook"
               >
@@ -53,12 +53,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-3">Services</h4>
+            <h4 className="text-gray-900 font-semibold mb-3">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  className="transition-colors rounded"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services"
                 >
                   Overview
@@ -66,8 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  className="transition-colors rounded"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services/$slug"
                   params={{ slug: "digital-solutions" }}
                 >
@@ -76,8 +74,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  className="transition-colors rounded"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services"
                 >
                   AI Solutions
@@ -85,8 +82,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  className="transition-colors rounded"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services"
                 >
                   IoT Solutions
@@ -96,12 +92,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-3">Company</h4>
+            <h4 className="text-gray-900 font-semibold mb-3">Company</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  className="transition-colors"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors text-gray-800 hover:text-blue-700"
                   to="/about"
                 >
                   About Us
@@ -109,8 +104,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  className="transition-colors"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors text-gray-800 hover:text-blue-700"
                   to="/why-agilium"
                 >
                   Why Agilium
@@ -118,8 +112,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  className="transition-colors"
-                  style={{ color: "#e6f2f5" }}
+                  className="transition-colors text-gray-800 hover:text-blue-700"
                   to="/contact"
                 >
                   Contact
@@ -129,17 +122,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-3">Contact</h4>
+            <h4 className="text-gray-900 font-semibold mb-3">Contact</h4>
             <p className="text-sm">info@agiliumtech.com</p>
             <p className="text-sm">www.agiliumtech.com</p>
           </div>
         </div>
 
         <div
-          className="mt-10 pt-6 text-xs"
+          className="mt-10 pt-6 text-xs text-gray-800"
           style={{
-            borderTop: "1px solid rgba(20, 193, 250, 0.25)",
-            color: "#cfe8ee",
+            borderTop: "1px solid rgba(59, 130, 246, 0.25)",
           }}
         >
           <p>

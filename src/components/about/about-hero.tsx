@@ -28,7 +28,7 @@ export default function AboutPageHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95" />
       <div className="absolute inset-0 bg-[radial-gradient(#2d5b7a_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
       <motion.div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float"
@@ -39,13 +39,13 @@ export default function AboutPageHero() {
         }}
       />
       <motion.div
-        className="relative z-10 text-center max-w-4xl mx-auto"
+        className="relative z-10 text-center max-w-4xl mx-auto text-gray-900"
         variants={heroContainerVariants}
         initial="hidden"
         animate="visible"
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight"
+          className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 tracking-tight"
           variants={heroItemVariants}
         >
           The Architects of{" "}
@@ -53,7 +53,7 @@ export default function AboutPageHero() {
             className="bg-clip-text text-transparent"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, #e6faff, var(--brand-cyan-bright))",
+                "linear-gradient(90deg, #1a1a1a, var(--brand-blue-glow))",
             }}
           >
             Innovation

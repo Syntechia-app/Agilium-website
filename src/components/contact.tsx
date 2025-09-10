@@ -69,14 +69,14 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 px-4 bg-gradient-to-b from-blue-950 to-slate-900"
+      className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8]"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Get In <span className="text-cyan-400">Touch</span>
+        <div className="text-center mb-16 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Get In <span className="text-blue-700">Touch</span>
           </h2>
-          <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-4xl mx-auto">
             Ready to transform your business? Let's discuss how we can help you
             achieve your goals.
           </p>
@@ -84,9 +84,9 @@ export function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+          <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-2xl text-white">
+              <CardTitle className="text-2xl text-gray-900">
                 Send us a message
               </CardTitle>
             </CardHeader>
@@ -94,7 +94,7 @@ export function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-blue-200 text-sm font-medium mb-2 block">
+                    <label className="text-gray-800 text-sm font-medium mb-2 block">
                       Full Name *
                     </label>
                     <Input
@@ -102,12 +102,12 @@ export function Contact() {
                       autoComplete="name"
                       value={formData.name}
                       onChange={(e) => handleChange("name", e.target.value)}
-                      className="bg-blue-900/30 border-blue-700/50 text-white placeholder:text-blue-300"
+                      className="bg-blue-100 border-blue-300 text-gray-800 placeholder:text-gray-500"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label className="text-blue-200 text-sm font-medium mb-2 block">
+                    <label className="text-gray-800 text-sm font-medium mb-2 block">
                       Email Address *
                     </label>
                     <Input
@@ -116,36 +116,36 @@ export function Contact() {
                       autoComplete="email"
                       value={formData.email}
                       onChange={(e) => handleChange("email", e.target.value)}
-                      className="bg-blue-900/30 border-blue-700/50 text-white placeholder:text-blue-300"
+                      className="bg-blue-100 border-blue-300 text-gray-800 placeholder:text-gray-500"
                       placeholder="your.email@company.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-blue-200 text-sm font-medium mb-2 block">
+                  <label className="text-gray-800 text-sm font-medium mb-2 block">
                     Company
                   </label>
                   <Input
                     autoComplete="organization"
                     value={formData.company}
                     onChange={(e) => handleChange("company", e.target.value)}
-                    className="bg-blue-900/30 border-blue-700/50 text-white placeholder:text-blue-300"
+                    className="bg-blue-100 border-blue-300 text-gray-800 placeholder:text-gray-500"
                     placeholder="Your company name"
                   />
                 </div>
 
                 <div>
-                  <label className="text-blue-200 text-sm font-medium mb-2 block">
+                  <label className="text-gray-800 text-sm font-medium mb-2 block">
                     Service Interest
                   </label>
                   <Select
                     onValueChange={(value) => handleChange("service", value)}
                   >
-                    <SelectTrigger className="bg-blue-900/30 border-blue-700/50 text-white">
+                    <SelectTrigger className="bg-blue-100 border-blue-300 text-gray-800">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
-                    <SelectContent className="bg-blue-900 border-blue-700">
+                    <SelectContent className="bg-white border-blue-300 text-gray-800">
                       <SelectItem value="digital-solutions">
                         Digital Solutions
                       </SelectItem>
@@ -174,7 +174,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label className="text-blue-200 text-sm font-medium mb-2 block">
+                  <label className="text-gray-800 text-sm font-medium mb-2 block">
                     Message *
                   </label>
                   <Textarea
@@ -182,7 +182,7 @@ export function Contact() {
                     autoComplete="off"
                     value={formData.message}
                     onChange={(e) => handleChange("message", e.target.value)}
-                    className="bg-blue-900/30 border-blue-700/50 text-white placeholder:text-blue-300 min-h-[120px]"
+                    className="bg-blue-100 border-blue-300 text-gray-800 placeholder:text-gray-500 min-h-[120px]"
                     placeholder="Tell us about your project requirements..."
                   />
                 </div>
@@ -201,17 +201,17 @@ export function Contact() {
                 {/* Status */}
                 <div role="status" aria-live="polite" className="text-sm">
                   {statusMessage?.type === "success" && (
-                    <p className="text-green-400">{statusMessage.text}</p>
+                    <p className="text-green-600">{statusMessage.text}</p>
                   )}
                   {statusMessage?.type === "error" && (
-                    <p className="text-red-400">{statusMessage.text}</p>
+                    <p className="text-red-600">{statusMessage.text}</p>
                   )}
                 </div>
 
                 <Button
                   type="submit"
                   disabled={submitting}
-                  className="w-full bg-[color:var(--brand-blue)] hover:bg-[color:var(--brand-cyan)] text-white font-semibold py-3 disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-[color:var(--brand-cyan)]"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-blue-500"
                 >
                   {submitting ? "Sending..." : "Send Message"}
                   <Send className="ml-2 w-4 h-4" />
@@ -222,43 +222,43 @@ export function Contact() {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+            <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[color:var(--brand-blue)] to-[color:var(--brand-cyan)] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold">Email Us</h3>
-                    <p className="text-blue-200">info@agiliumtech.com</p>
+                    <h3 className="text-gray-900 font-semibold">Email Us</h3>
+                    <p className="text-gray-800">info@agiliumtech.com</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+            <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[color:var(--brand-blue)] to-[color:var(--brand-cyan)] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold">Call Us</h3>
-                    <p className="text-blue-200">+966-530735006</p>
+                    <h3 className="text-gray-900 font-semibold">Call Us</h3>
+                    <p className="text-gray-800">+966-530735006</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+            <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[color:var(--brand-blue)] to-[color:var(--brand-cyan)] rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold">Visit Us</h3>
-                    <p className="text-blue-200">
+                    <h3 className="text-gray-900 font-semibold">Visit Us</h3>
+                    <p className="text-gray-800">
                       3665 Yanbu, 7824 Dhahrat Laban Dist. 13784
                       <br />
                       Riyadh, Saudi Arabia
@@ -269,12 +269,12 @@ export function Contact() {
             </Card>
 
             {/* Business Hours */}
-            <Card className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm">
+            <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
               <CardContent className="p-8">
-                <h3 className="text-white font-semibold mb-4">
+                <h3 className="text-gray-900 font-semibold mb-4">
                   Business Hours
                 </h3>
-                <div className="space-y-2 text-blue-200">
+                <div className="space-y-2 text-gray-800">
                   <div className="flex justify-between">
                     <span>Saturday - Thursday</span>
                     <span>8:00 AM - 5:00 PM</span>

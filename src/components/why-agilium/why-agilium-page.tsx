@@ -62,10 +62,10 @@ const reasons = [
 
 export function WhyAgilium() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A]">
+    <section className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+        <div className="text-center mb-16 text-gray-900">
+          <p className="text-xl text-gray-800 max-w-4xl mx-auto">
             <strong>
               Unlock the potential of digital transformation with Agilium.{" "}
             </strong>{" "}
@@ -89,7 +89,7 @@ export function WhyAgilium() {
           {reasons.map((reason, index) => (
             <Card
               key={index}
-              className="bg-gradient-to-br from-blue-900/50 to-slate-900/50 border-blue-700/50 backdrop-blur-sm hover:border-[color:var(--brand-cyan)]/50 transition-all duration-300 group"
+              className="bg-white/70 border-blue-300 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 group"
             >
               <CardContent className="p-8">
                 <div
@@ -97,10 +97,10 @@ export function WhyAgilium() {
                 >
                   <reason.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[color:var(--brand-cyan)] transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors">
                   {reason.title}
                 </h3>
-                <p className="text-blue-200 leading-relaxed">
+                <p className="text-gray-800 leading-relaxed">
                   {reason.description}
                 </p>
               </CardContent>

@@ -56,19 +56,21 @@ const visions = [
 export function About() {
   return (
     <motion.section
-      className="py-20 px-4 bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A] overflow-hidden"
+      className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }} // Animate once when 20% of the section is visible
     >
       <div className="max-w-7xl mx-auto">
-        <motion.div className="text-center mb-16" variants={itemVariants}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About{" "}
-            <span className="text-[color:var(--brand-cyan)]">Agilium</span>
+        <motion.div
+          className="text-center mb-16 text-gray-900"
+          variants={itemVariants}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            About <span className="text-blue-700">Agilium</span>
           </h2>
-          <p className="text-xl text-blue-200 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-800 max-w-4xl mx-auto leading-relaxed">
             From Digital Platforms and Intelligent Systems to Future-Ready
             Strategies, we help organizations innovate, adapt, and lead in an
             ever-evolving digital world.
@@ -86,16 +88,18 @@ export function About() {
             whileHover={{ y: -8, scale: 1.03 }} // Lift and scale on hover
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+            <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
               <CardContent className="p-8 text-center">
                 <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                  <Target className="w-12 h-12 text-[color:var(--brand-cyan)] mx-auto mb-4" />
+                  <Target className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-4">Mission</h3>
-                <ul className="text-blue-200 space-y-2 text-left">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Mission
+                </h3>
+                <ul className="text-gray-800 space-y-2 text-left">
                   {missions.map((mission, index) => (
                     <li key={index} className="flex gap-2">
-                      <SquareCheckBig className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                      <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />
                       {mission}
                     </li>
                   ))}
@@ -110,16 +114,18 @@ export function About() {
             whileHover={{ y: -8, scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Card className="h-full bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+            <Card className="h-full bg-white/70 border-blue-300 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
               <CardContent className="p-8 text-center">
                 <motion.div whileHover={{ scale: 1.1, rotate: -5 }}>
-                  <Eye className="w-12 h-12 text-[color:var(--brand-cyan)] mx-auto mb-4" />
+                  <Eye className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 </motion.div>
-                <h3 className="text-2xl font-bold text-white mb-4">Vision</h3>
-                <ul className="text-blue-200 space-y-2 text-left">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Vision
+                </h3>
+                <ul className="text-gray-800 space-y-2 text-left">
                   {visions.map((vision, index) => (
                     <li key={index} className="flex gap-2">
-                      <SquareCheckBig className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                      <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />
                       {vision}
                     </li>
                   ))}

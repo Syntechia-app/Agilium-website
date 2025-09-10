@@ -25,7 +25,9 @@ export const Route = createFileRoute("/about")({
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A]">
+    <main className="min-h-screen bg-background">
+      {" "}
+      {/* Main background set via CSS variable */}
       <AboutPageHero />
       <AboutComponent />
     </main>

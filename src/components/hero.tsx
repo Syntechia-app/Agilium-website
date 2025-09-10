@@ -27,7 +27,7 @@ export function Hero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95" />
       <div className="absolute inset-0 opacity-10 -z-10" />
 
       {/* Floating Elements with new animation */}
@@ -43,7 +43,7 @@ export function Hero() {
         className="absolute bottom-32 right-16 w-32 h-32 rounded-full blur-2xl animate-float"
         style={{
           backgroundColor:
-            "color-mix(in oklab, var(--brand-cyan-bright) 30%, transparent)",
+            "color-mix(in oklab, var(--brand-blue-glow) 30%, transparent)",
           animationDuration: "12s",
           animationDelay: "2s",
         }}
@@ -60,28 +60,25 @@ export function Hero() {
 
       {/* Animate the main content container */}
       <motion.div
-        className="relative z-10 text-center max-w-6xl mx-auto mt-20"
+        className="relative z-10 text-center max-w-6xl mx-auto mt-20 text-gray-900"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {/* Main Heading */}
         <motion.div className="mb-8" variants={itemVariants}>
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight">
             <span
               className="bg-clip-text text-transparent"
               style={{
                 backgroundImage:
-                  "linear-gradient(90deg, #ffffff, #e6faff, var(--brand-cyan-bright))",
+                  "linear-gradient(90deg, #1a1a1a, #4a4a4a, var(--brand-blue-glow))",
               }}
             >
               AGILIUM TECHNOLOGIES
             </span>
             <br />
-            <span
-              className="text-4xl md:text-5xl font-light"
-              style={{ color: "#e6f2f5" }}
-            >
+            <span className="text-4xl md:text-5xl font-light text-gray-800">
               Where Innovation Meets Success
             </span>
           </h1>

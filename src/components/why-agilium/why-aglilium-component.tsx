@@ -11,18 +11,19 @@ const itemVariants: Variants = {
 
 export function WhyAgiliumComponent() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-[color:var(--brand-ink)] to-[#0B1B3A]">
-      <motion.div className="text-center mb-16" variants={itemVariants}>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+    <section className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden">
+      <motion.div
+        className="text-center mb-16 text-gray-900"
+        variants={itemVariants}
+      >
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Unlock the potential of{" "}
-          <span className="text-[color:var(--brand-cyan)]">
-            Digital Transformation
-          </span>
+          <span className="text-blue-700">Digital Transformation</span>
         </h2>
       </motion.div>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-800 max-w-4xl mx-auto">
             We bridge the gap between ambitious visions and practical solutions,
             tailoring innovation to each client’s unique needs. With expertise
             across industries and emerging technologies, we empower

@@ -28,7 +28,7 @@ export function WhyAgiliumHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Layers */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--brand-ink)]/95 via-[#0B1B3A]/90 to-[color:var(--brand-ink)]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#b1c7e9]/95 via-[#759cd8]/90 to-[#b1c7e9]/95" />
 
       {/* Abstract "Converging Lines" background effect */}
       <div
@@ -52,13 +52,13 @@ export function WhyAgiliumHero() {
 
       {/* Foreground Content */}
       <motion.div
-        className="relative z-10 text-center max-w-5xl mx-auto"
+        className="relative z-10 text-center max-w-5xl mx-auto text-gray-900"
         variants={containerVariants}
         initial="hidden"
         animate="visible" // Animate on page load
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight"
+          className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight leading-tight"
           variants={itemVariants}
         >
           More Than a Vendor.
@@ -68,7 +68,7 @@ export function WhyAgiliumHero() {
             className="bg-clip-text text-transparent"
             style={{
               backgroundImage:
-                "linear-gradient(90deg, var(--brand-cyan-bright), var(--brand-blue-glow))",
+                "linear-gradient(90deg, #1a1a1a, var(--brand-blue-glow))",
             }}
           >
             Partner

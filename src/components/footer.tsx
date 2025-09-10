@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/Agilium_logo_resized.png";
+import { Facebook, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,37 +20,34 @@ export function Footer() {
                 alt="Agilium logo"
                 width={32}
                 height={32}
-                className="w-8 h-8"
+                className="w-16 h-16"
               />
               <div className="flex items-baseline gap-2">
                 <h3 className="text-white font-bold text-xl">AGILIUM</h3>
               </div>
             </div>
             <p className="text-sm">Where Innovation Meets Success</p>
-            <div className="flex gap-3 mt-4" aria-label="Social links">
+            <div className="flex gap-3 mt-4 gap-x-6" aria-label="Social links">
               <a
-                className="transition-colors"
-                style={{ color: "#e6f2f5" }}
+                className="transition-colors hover:text-[color:var(--brand-cyan)]"
                 href="#"
                 aria-label="LinkedIn"
               >
-                LinkedIn
+                <Linkedin className="w-8 h-8" />
               </a>
               <a
-                className="transition-colors"
-                style={{ color: "#e6f2f5" }}
+                className="transition-colors hover:text-[color:var(--brand-cyan)]"
                 href="#"
                 aria-label="Twitter"
               >
-                Twitter
+                <Twitter className="w-8 h-8" />
               </a>
               <a
-                className="transition-colors"
-                style={{ color: "#e6f2f5" }}
+                className="transition-colors hover:text-[color:var(--brand-cyan)]"
                 href="#"
                 aria-label="Facebook"
               >
-                Facebook
+                <Facebook className="w-8 h-8" />
               </a>
             </div>
           </div>

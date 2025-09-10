@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Eye } from "lucide-react";
+import { Target, Eye, SquareCheckBig } from "lucide-react";
 import { motion, type Variants } from "framer-motion";
 
 // Animation variants for the container to orchestrate staggered animations
@@ -36,6 +36,22 @@ const cardContainerVariants = {
     },
   },
 };
+
+const missions = [
+  "Empower governments, enterprises, and communities with innovative digital solutions.",
+  "Bridge the physical and digital worlds through transformative technology.",
+  "Turn bold ideas into practical, measurable outcomes.",
+  "Drive efficiency, connectivity, and sustainable growth.",
+  "Deliver impact across Saudi Arabia and the wider region.",
+];
+
+const visions = [
+  "Shape a smarter, more connected future for governments, enterprises, and societies.",
+  "Be the driving force of transformative innovation in Saudi Arabia and the GCC.",
+  "Bridge digital and physical spaces to create seamless human experiences.",
+  "Turn bold ideas into impactful realities that inspire progress.",
+  "Lead with agility, creativity, and responsibility toward a sustainable tomorrow.",
+];
 
 export function About() {
   return (
@@ -77,21 +93,12 @@ export function About() {
                 </motion.div>
                 <h3 className="text-2xl font-bold text-white mb-4">Mission</h3>
                 <ul className="text-blue-200 space-y-2 text-left">
-                  <li>
-                    • Empower governments, enterprises, and communities with
-                    innovative digital solutions.
-                  </li>
-                  <li>
-                    • Bridge the physical and digital worlds through
-                    transformative technology.
-                  </li>
-                  <li>• Turn bold ideas into practical, measurable outcomes</li>
-                  <li>
-                    • Drive efficiency, connectivity, and sustainable growth.
-                  </li>
-                  <li>
-                    • Deliver impact across Saudi Arabia and the wider region.
-                  </li>
+                  {missions.map((mission, index) => (
+                    <li key={index} className="flex gap-2">
+                      <SquareCheckBig className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                      {mission}
+                    </li>
+                  ))}
                 </ul>
               </CardContent>
             </Card>
@@ -110,26 +117,12 @@ export function About() {
                 </motion.div>
                 <h3 className="text-2xl font-bold text-white mb-4">Vision</h3>
                 <ul className="text-blue-200 space-y-2 text-left">
-                  <li>
-                    • Shape a smarter, more connected future for governments,
-                    enterprises, and societies.
-                  </li>
-                  <li>
-                    • Be the driving force of transformative innovation in Saudi
-                    Arabia and the GCC.
-                  </li>
-                  <li>
-                    • Bridge digital and physical spaces to create seamless
-                    human experiences.
-                  </li>
-                  <li>
-                    • Turn bold ideas into impactful realities that inspire
-                    progress.
-                  </li>
-                  <li>
-                    • Lead with agility, creativity, and responsibility toward a
-                    sustainable tomorrow.
-                  </li>
+                  {visions.map((vision, index) => (
+                    <li key={index} className="flex gap-2">
+                      <SquareCheckBig className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                      {vision}
+                    </li>
+                  ))}
                 </ul>
               </CardContent>
             </Card>

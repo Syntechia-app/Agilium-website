@@ -1,6 +1,6 @@
 import { services } from "@/data/services";
 import { createFileRoute } from "@tanstack/react-router";
-import ServiceComponent from "@/components/service";
+import ServiceComponent from "@/components/services/service-details";
 
 export const Route = createFileRoute("/services/$slug")({
   component: Service,

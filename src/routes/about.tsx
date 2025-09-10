@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import AboutPageHero from "@/components/about-hero";
-import { AboutComponent } from "@/components/about-component";
+import AboutPageHero from "@/components/about/about-hero";
+import { AboutComponent } from "@/components/about/about-component";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

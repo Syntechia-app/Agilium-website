@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { WhyAgilium } from "@/components/why-agilium";
-import { WhyAgiliumHero } from "@/components/why-agilium-hero";
+import { WhyAgilium } from "@/components/why-agilium/why-agilium-page";
+import { WhyAgiliumHero } from "@/components/why-agilium/why-agilium-hero";
 
 export const Route = createFileRoute("/why-agilium")({
   head: () => ({

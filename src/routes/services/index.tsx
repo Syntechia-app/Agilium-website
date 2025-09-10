@@ -21,8 +21,8 @@ export const Route = createFileRoute("/services/")({
   component: ServicesPage,
 });
 
-import { Services } from "@/components/services";
-import { ServicesPageHero } from "@/components/services-hero";
+import { Services } from "@/components/services/services-page";
+import { ServicesPageHero } from "@/components/services/services-hero";
 
 export default function ServicesPage() {
   return (

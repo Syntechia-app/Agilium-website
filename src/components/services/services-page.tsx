@@ -1,6 +1,3 @@
-// src/components/Services.tsx (or similar)
-"use client";
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -51,64 +48,67 @@ export function Services() {
             need to adapt and thrive. By aligning technology with business
             strategy, we deliver measurable impact and long-term growth.”
           </p>
-          <div className="mt-16">
+        </motion.div>
+
+        <Card className="h-full mb-20 bg-gradient-to-br from-blue-800/50 to-blue-900/50 border-blue-700/50 backdrop-blur-sm transition-colors duration-300 hover:border-blue-500/80">
+          <CardContent className="p-8">
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Help clients shift to a digital-first approach to their business
                 operations.
               </li>
 
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Develop strategies to optimize clients’ online presence and
                 improve customer engagement.
               </li>
 
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Implement new digital tools and technologies to enhance
                 productivity and efficiency.
               </li>
 
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Aid in the adoption of emerging technologies (AI, Blockchain,
                 IoT).
               </li>
 
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Ensure data security and compliance with industry standards.
               </li>
 
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Provide training and education for employees to adapt to new
                 processes.
               </li>
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Streamline supply chains and logistics for better results.
               </li>
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Deliver customized solutions for unique business needs and
                 challenges.
               </li>
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Help clients measure and optimize digital transformation
                 outcomes.
               </li>
-              <li className="flex items-center gap-3 text-blue-200">
+              <li className="flex items-start gap-3 text-blue-200">
                 <span className="text-cyan-400 mr-2 mt-1">•</span>
                 Drive results by aligning digital technologies, data analysis,
                 and business strategy.
               </li>
             </ul>
-          </div>
-        </motion.div>
+          </CardContent>
+        </Card>
 
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"

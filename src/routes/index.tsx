@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/hero";
-import { About } from "@/components/about";
-import { Services } from "@/components/services";
-import { WhyAgilium } from "@/components/why-agilium";
+import { About } from "@/components/about/about-page";
 import { Partners } from "@/components/partners";
+import { ServicesComponent } from "@/components/services/services-component";
+import { WhyAgiliumComponent } from "@/components/why-agilium/why-aglilium-component";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,8 +39,8 @@ export default function App() {
     <main className="min-h-screen ">
       <Hero />
       <About />
-      <Services />
-      <WhyAgilium />
+      <ServicesComponent />
+      <WhyAgiliumComponent />
       <Partners />
     </main>
   );

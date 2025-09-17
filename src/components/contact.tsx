@@ -34,10 +34,10 @@ export function Contact() {
     setSubmitting(true);
     setStatusMessage(null);
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://agiliumtech.com/contact.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, middleName: "" }),
+        body: JSON.stringify({ ...formData }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json?.error || "Submission failed");

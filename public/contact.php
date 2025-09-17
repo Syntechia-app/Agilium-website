@@ -23,6 +23,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 
 // Basic validation
 $name    = htmlspecialchars($data["name"]);
+$email = trim($data["email"]);
 $company = htmlspecialchars($data["company"]);
 $service = htmlspecialchars($data["service"]);
 $message = nl2br(htmlspecialchars($data["message"]));
@@ -105,7 +106,7 @@ $body = "
 
 if (empty($name) || empty($email) || empty($message)) {
     http_response_code(400);
-    echo json_encode(["success" => false, "message" => "All fields are required"]);
+    echo json_encode(["success" => false, "message" => "All fields are required","data"=>[$name,$email,$message]]);
     exit;
 }
 

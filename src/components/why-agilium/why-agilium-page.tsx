@@ -78,7 +78,7 @@ export function WhyAgilium() {
         </div>
         <div className="mb-6">
           <img
-            src="/agilium-dev/images/digital.webp"
+            src="/images/digital.webp"
             alt="Digital Transformation"
             className="w-full h-auto rounded-sm"
           />

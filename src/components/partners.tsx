@@ -3,42 +3,42 @@ import { Card, CardContent } from "@/components/ui/card";
 const partners = [
   {
     name: "ATHRIB IT",
-    logo: "/agilium-dev/images/partners/athrib-bg.png",
+    logo: "/images/partners/athrib-bg.png",
     category: "Website Development",
   },
   {
     name: "GAD MEDICAL",
-    logo: "/agilium-dev/images/partners/gad med.png",
+    logo: "/images/partners/gad med.png",
     category: "Website Development",
   },
   {
     name: "SAMGEO",
-    logo: "/agilium-dev/images/partners/samgeo.png",
+    logo: "/images/partners/samgeo.png",
     category: "Website Development",
   },
   {
     name: "WALES",
-    logo: "/agilium-dev/images/partners/Wales.png",
+    logo: "/images/partners/Wales.png",
     category: "Network Infrastructure",
   },
   {
     name: "KOCH MEDICAL",
-    logo: "/agilium-dev/images/partners/koch-medical.png",
+    logo: "/images/partners/koch-medical.png",
     category: "Website Development",
   },
   {
     name: "ALISMAILY MEDICAL",
-    logo: "/agilium-dev/images/partners/alismailymedical.png",
+    logo: "/images/partners/alismailymedical.png",
     category: "IT & Consulting",
   },
   {
     name: "HORIZON TECHNOLOGIES",
-    logo: "/agilium-dev/images/partners/horizon-logo.png",
+    logo: "/images/partners/horizon-logo.png",
     category: "Website Development",
   },
   {
     name: "SYNTECHIA",
-    logo: "/agilium-dev/images/partners/syntechia.png",
+    logo: "/images/partners/syntechia.png",
     category: "Virtualization",
   },
 ];

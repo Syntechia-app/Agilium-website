@@ -28,7 +28,7 @@ export function WhyAgiliumHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Layers */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#b1c7e9]/95 via-[#759cd8]/90 to-[#b1c7e9]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95" />
 
       {/* Abstract "Converging Lines" background effect */}
       <div

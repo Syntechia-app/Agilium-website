@@ -52,9 +52,7 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg focus-visible:ring-2 focus-visible:ring-blue-500">
-              Get Started
-            </Button>
+
           </div>
 
           {/* Mobile Menu Button */}

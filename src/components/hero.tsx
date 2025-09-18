@@ -27,7 +27,15 @@ export function Hero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95" />
+      <div className="absolute inset-0">
+        <img
+          src="/images/TECHNOLOGIES 4.jpg"
+          alt="Business Technology"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa] via-[#b1c7e9] to-[#edf2fa] opacity-70"></div>
+
       <div className="absolute inset-0 opacity-10 -z-10" />
 
       {/* Floating Elements with new animation */}
@@ -67,18 +75,12 @@ export function Hero() {
       >
         {/* Main Heading */}
         <motion.div className="mb-8" variants={itemVariants}>
-          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight">
-            <span
-              className="bg-clip-text text-transparent"
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #1a1a1a, #4a4a4a, var(--brand-blue-glow))",
-              }}
-            >
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            <span className="bg-clip-text text-transparent bg-[#1a1a1a]">
               AGILIUM TECHNOLOGIES
             </span>
             <br />
-            <span className="text-4xl md:text-5xl font-light text-gray-800">
+            <span className="text-3xl md:text-4xl font-light text-gray-800">
               Where Innovation Meets Success
             </span>
           </h1>

@@ -28,7 +28,14 @@ export function ServicesPageHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background: Base Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95" />
+      <div className="absolute inset-0 mt-16">
+        <img
+          src="/images/Engineering Your Digital Future.jpg"
+          alt="Business Technology"
+          className="w-full h-auto absolute inset-0"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa] via-[#b1c7e9] to-[#edf2fa] opacity-60" />
       <motion.div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float"
         style={{
@@ -90,7 +97,7 @@ export function ServicesPageHero() {
         animate="visible" // Animate on page load
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight"
+          className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight"
           variants={itemVariants}
         >
           Engineering Your{" "}

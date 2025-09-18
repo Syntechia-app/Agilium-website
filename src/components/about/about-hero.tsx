@@ -28,8 +28,14 @@ export default function AboutPageHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa]/95 via-[#b1c7e9]/90 to-[#edf2fa]/95" />
-      <div className="absolute inset-0 bg-[radial-gradient(#2d5b7a_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+      <div className="absolute inset-0 mt-16">
+        <img
+          src="/images/The Architects of Innovation.jpg"
+          alt="Business Technology"
+          className="w-full h-auto absolute inset-0"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa] via-[#b1c7e9] to-[#edf2fa] opacity-60" />
       <motion.div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-20 animate-float"
         style={{
@@ -45,7 +51,7 @@ export default function AboutPageHero() {
         animate="visible"
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-bold text-gray-900 mb-4 tracking-tight"
+          className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 tracking-tight"
           variants={heroItemVariants}
         >
           The Architects of{" "}

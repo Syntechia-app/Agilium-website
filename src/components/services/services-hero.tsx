@@ -32,7 +32,7 @@ export function ServicesPageHero() {
         <img
           src="/images/Engineering Your Digital Future.jpg"
           alt="Business Technology"
-          className="w-full h-auto absolute inset-0"
+          className="w-full h-full object-cover absolute inset-0"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa] via-[#b1c7e9] to-[#edf2fa] opacity-60" />

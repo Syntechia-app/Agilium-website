@@ -22,21 +22,23 @@ export function WhyAgiliumComponent() {
         </h2>
       </motion.div>
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-xl text-gray-800 max-w-4xl mx-auto">
-            We bridge the gap between ambitious visions and practical solutions,
-            tailoring innovation to each client’s unique needs. With expertise
-            across industries and emerging technologies, we empower
-            organizations to accelerate growth, enhance efficiency, and achieve
-            lasting success in today’s dynamic business landscape.
-          </p>
-        </div>
-        <div className="mb-6">
-          <img
-            src="/images/digital.webp"
-            alt="Digital Transformation"
-            className="w-full h-auto rounded-sm"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div>
+            <p className="text-xl text-gray-800 max-w-4xl mx-auto">
+              We bridge the gap between ambitious visions and practical
+              solutions, tailoring innovation to each client’s unique needs.
+              With expertise across industries and emerging technologies, we
+              empower organizations to accelerate growth, enhance efficiency,
+              and achieve lasting success in today’s dynamic business landscape.
+            </p>
+          </div>
+          <div className="mb-6">
+            <img
+              src="/images/digital.webp"
+              alt="Digital Transformation"
+              className="w-full h-auto rounded-sm"
+            />
+          </div>
         </div>
       </div>
     </section>

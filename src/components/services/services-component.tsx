@@ -50,11 +50,28 @@ export function ServicesComponent() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             What We <span className="text-blue-700">Do</span>
           </h2>
-          <p className="text-xl max-w-4xl mx-auto text-left text-gray-800">
-            “At Agilium, we guide organizations through every step of their digital transformation journey. From strategy to execution, we help clients embrace a digital-first approach, optimize their online presence, and implement the latest technologies.
 
-Our tailored solutions enhance efficiency, strengthen data security, and empower teams with the tools and training they need to adapt and thrive. By aligning technology with business strategy, we deliver measurable impact and long-term growth.”
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div>
+              <p className="text-xl max-w-4xl mx-auto text-left text-gray-800">
+                “At Agilium, we guide organizations through every step of their
+                digital transformation journey. From strategy to execution, we
+                help clients embrace a digital-first approach, optimize their
+                online presence, and implement the latest technologies. Our
+                tailored solutions enhance efficiency, strengthen data security,
+                and empower teams with the tools and training they need to adapt
+                and thrive. By aligning technology with business strategy, we
+                deliver measurable impact and long-term growth.”
+              </p>
+            </div>
+            <div className="w-full h-[70%] mb-6 overflow-hidden">
+              <img
+                src="/images/TECHNOLOGIES 5.webp"
+                alt="Digital Transformation"
+                className="w-full object-cover h-full rounded-sm"
+              />
+            </div>
+          </div>
         </motion.div>
       </div>
 

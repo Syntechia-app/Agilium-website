@@ -32,7 +32,7 @@ export default function AboutPageHero() {
         <img
           src="/images/The Architects of Innovation.jpg"
           alt="Business Technology"
-          className="w-full h-auto absolute inset-0"
+          className="w-full h-full absolute inset-0 object-cover"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-br from-[#edf2fa] via-[#b1c7e9] to-[#edf2fa] opacity-60" />

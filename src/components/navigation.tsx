@@ -28,13 +28,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img
-              src={logo}
-              alt="Agilium logo"
-              width={40}
-              height={40}
-              className="w-8 h-8"
-            />
+            <img src={logo} alt="Agilium logo" className="w-11 h-11" />
             <span className="text-blue-900 font-bold text-xl">AGILIUM</span>
           </Link>
 
@@ -52,7 +46,6 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-
           </div>
 
           {/* Mobile Menu Button */}

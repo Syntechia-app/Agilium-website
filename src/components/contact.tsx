@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CalendarClock } from "lucide-react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -271,17 +271,24 @@ export function Contact() {
             {/* Business Hours */}
             <Card className="bg-white/70 border-blue-300 backdrop-blur-sm">
               <CardContent className="p-8">
-                <h3 className="text-gray-900 font-semibold mb-4">
-                  Business Hours
-                </h3>
-                <div className="space-y-2 text-gray-800">
-                  <div className="flex justify-between">
-                    <span>Saturday - Thursday</span>
-                    <span>8:00 AM - 5:00 PM</span>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center">
+                    <CalendarClock className="w-6 h-6 text-white" />
                   </div>
-                  <div className="flex justify-between">
-                    <span>Friday</span>
-                    <span>Closed</span>
+                  <div className="flex-1">
+                    <h3 className="text-gray-900 font-semibold mb-4">
+                      Business Hours
+                    </h3>
+                    <div className="space-y-2 text-gray-800">
+                      <div className="flex justify-between">
+                        <span>Saturday - Thursday</span>
+                        <span>8:00 AM - 5:00 PM</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Friday</span>
+                        <span>Closed</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>

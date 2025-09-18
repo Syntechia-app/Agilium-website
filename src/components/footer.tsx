@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/Agilium_logo_resized.png";
-import { Facebook, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, X } from "lucide-react";
 
 export function Footer() {
   return (
@@ -40,7 +40,7 @@ export function Footer() {
                 href="#"
                 aria-label="Twitter"
               >
-                <Twitter className="w-8 h-8" />
+                <X className="w-8 h-8" />
               </a>
               <a
                 className="transition-colors hover:text-blue-700"
@@ -48,6 +48,13 @@ export function Footer() {
                 aria-label="Facebook"
               >
                 <Facebook className="w-8 h-8" />
+              </a>
+              <a
+                className="transition-colors hover:text-blue-700"
+                href="#"
+                aria-label="Facebook"
+              >
+                <Instagram className="w-8 h-8" />
               </a>
             </div>
           </div>
@@ -77,7 +84,7 @@ export function Footer() {
                   className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services"
                 >
-                  AI Solutions
+                Data & Analytics
                 </Link>
               </li>
               <li>
@@ -85,7 +92,7 @@ export function Footer() {
                   className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services"
                 >
-                  IoT Solutions
+                  Advisory & Transformation
                 </Link>
               </li>
             </ul>

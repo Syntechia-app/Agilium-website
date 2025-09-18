@@ -31,11 +31,11 @@ export function Navigation() {
             <img
               src={logo}
               alt="Agilium logo"
-              width={32}
-              height={32}
+              width={40}
+              height={40}
               className="w-8 h-8"
             />
-            <span className="text-gray-900 font-bold text-xl">AGILIUM</span>
+            <span className="text-blue-900 font-bold text-xl">AGILIUM</span>
           </Link>
 
           {/* Desktop Navigation */}

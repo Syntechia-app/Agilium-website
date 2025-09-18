@@ -78,7 +78,7 @@ export function Services() {
                   <div className="space-y-4">
                     <div>
                       <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                        Features:
+                        Services:
                       </h4>
                       <ul className="space-y-1 text-gray-800">
                         {service.features.map(
@@ -95,7 +95,7 @@ export function Services() {
                       </ul>
                     </div>
 
-                    <div>
+                    {/* <div>
                       <h4 className="text-lg font-semibold text-gray-900 mb-2">
                         Benefits:
                       </h4>
@@ -106,7 +106,7 @@ export function Services() {
                           </li>
                         ))}
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                   <Button
                     variant="outline"

@@ -70,7 +70,11 @@ export function Services() {
                   <p className="font-medium text-blue-600">
                     {service.subtitle}
                   </p>
-                  <p className="text-gray-800 text-sm">{service.description}</p>
+                  <div className="h-48">
+                    <p className="text-gray-800 text-sm">
+                      {service.description}
+                    </p>
+                  </div>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col justify-between">
                   {/* Features and Benefits can be complex; for this example, we'll keep them static.

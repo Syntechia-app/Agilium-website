@@ -22,7 +22,6 @@ export const Route = createFileRoute("/contact")({
 });
 
 import { Contact } from "@/components/contact";
-import { Partners } from "@/components/partners";
 
 export default function ContactPage() {
   return (
@@ -30,7 +29,6 @@ export default function ContactPage() {
       {" "}
       {/* Main background set via CSS variable */}
       <Contact />
-      <Partners />
     </main>
   );
 }

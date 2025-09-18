@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/Agilium_logo_resized.png";
-import { Facebook, Instagram, Linkedin, Twitter, X } from "lucide-react";
+import { Facebook, Instagram, Linkedin, X } from "lucide-react";
 
 export function Footer() {
   return (
@@ -84,7 +84,7 @@ export function Footer() {
                   className="transition-colors rounded text-gray-800 hover:text-blue-700"
                   to="/services"
                 >
-                Data & Analytics
+                  Data & Analytics
                 </Link>
               </li>
               <li>

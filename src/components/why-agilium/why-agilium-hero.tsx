@@ -71,13 +71,7 @@ export function WhyAgiliumHero() {
           More Than a Vendor.
           <br />
           Your Innovation{" "}
-          <span
-            className="bg-clip-text text-transparent"
-            style={{
-              backgroundImage:
-                "linear-gradient(90deg, #1a1a1a, var(--brand-blue-glow))",
-            }}
-          >
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#1a1a1a] via-[#0f3057] to-blue-900">
             Partner
           </span>
           .

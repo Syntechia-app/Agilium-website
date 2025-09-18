@@ -64,24 +64,36 @@ export function WhyAgilium() {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 text-gray-900">
-          <p className="text-xl text-gray-800 max-w-4xl mx-auto">
-            <strong>
-              Unlock the potential of digital transformation with Agilium.{" "}
-            </strong>{" "}
-            We bridge the gap between ambitious visions and practical solutions,
-            tailoring innovation to each client’s unique needs. With expertise
-            across industries and emerging technologies, we empower
-            organizations to accelerate growth, enhance efficiency, and achieve
-            lasting success in today’s dynamic business landscape.
-          </p>
-        </div>
-        <div className="mb-6">
-          <img
-            src="/images/digital.webp"
-            alt="Digital Transformation"
-            className="w-full h-auto rounded-sm"
-          />
+        <div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Unlock the potential of <br />
+            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              <span className="text-blue-700 mt-2">Digital Transformation</span>
+            </h2>
+          </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              <div>
+                <p className="text-xl text-gray-800 max-w-4xl mx-auto">
+                  We bridge the gap between ambitious visions and practical
+                  solutions, tailoring innovation to each client’s unique needs.
+                  With expertise across industries and emerging technologies, we
+                  empower organizations to accelerate growth, enhance
+                  efficiency, and achieve lasting success in today’s dynamic
+                  business landscape.
+                </p>
+              </div>
+              <div className="w-full h-[80%] mb-6 overflow-hidden">
+                <img
+                  src="/images/Unlock the potential of Digital Transformation.jpg"
+                  alt="Digital Transformation"
+                  className="w-full h-full rounded-sm"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Main Reasons */}

@@ -76,7 +76,7 @@ export function Hero() {
         {/* Main Heading */}
         <motion.div className="mb-8" variants={itemVariants}>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            <span className="bg-clip-text text-transparent bg-[#1a1a1a]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#1a1a1a] via-[#0f3057] to-blue-900">
               AGILIUM TECHNOLOGIES
             </span>
             <br />

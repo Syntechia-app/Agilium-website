@@ -56,7 +56,7 @@ const visions = [
 export function About() {
   return (
     <motion.section
-      className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden"
+      className="py-20 px-4 bg-gradient-to-b from-[#edf2fa] to-[#b1c7e9] overflow-hidden"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"

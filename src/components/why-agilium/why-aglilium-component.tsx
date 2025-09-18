@@ -11,7 +11,7 @@ const itemVariants: Variants = {
 
 export function WhyAgiliumComponent() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-[#b1c7e9] to-[#759cd8] overflow-hidden">
+    <section className="py-20 px-4 bg-gradient-to-b from-[#edf2fa] to-[#b1c7e9] overflow-hidden">
       <motion.div
         className="text-center mb-16 text-gray-900"
         variants={itemVariants}

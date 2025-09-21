@@ -2,24 +2,25 @@ import { motion, type Variants } from "framer-motion";
 
 // --- HERO COMPONENT (can be in the same file or imported) ---
 
-const heroContainerVariants: Variants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
     },
   },
 };
 
-const heroItemVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
+// Animation variants for individual elements fading in and up
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 25 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      ease: "easeOut",
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1], // A very smooth ease-out-quint curve
     },
   },
 };
@@ -46,13 +47,13 @@ export default function AboutPageHero() {
       />
       <motion.div
         className="relative z-10 text-center max-w-4xl mx-auto text-gray-900"
-        variants={heroContainerVariants}
+        variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         <motion.h1
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight"
-          variants={heroItemVariants}
+          variants={itemVariants}
         >
           The Architects of{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#1a1a1a] via-[#0f3057] to-blue-900">

@@ -6,24 +6,23 @@ const containerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.2,
     },
   },
 };
 
 // Animation variants for individual elements fading in and up
 const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 25 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.7,
-      ease: "easeIn", // A more elegant ease-out curve
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1], // A very smooth ease-out-quint curve
     },
   },
 };
-
 export function ServicesPageHero() {
   return (
     <section className="relative min-h-[100vh] flex items-center justify-center px-4 overflow-hidden">

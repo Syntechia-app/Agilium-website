@@ -30,7 +30,7 @@ export function Footer() {
             <div className="flex gap-3 mt-4 gap-x-6" aria-label="Social links">
               <a
                 className="transition-colors hover:text-blue-700"
-                href="#"
+                href="https://www.linkedin.com/company/agiliumtech/"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-8 h-8" />
@@ -44,15 +44,15 @@ export function Footer() {
               </a>
               <a
                 className="transition-colors hover:text-blue-700"
-                href="#"
+                href="https://www.facebook.com/share/1FHFV1eU7i/?mibextid=wwXIfr/"
                 aria-label="Facebook"
               >
                 <Facebook className="w-8 h-8" />
               </a>
               <a
                 className="transition-colors hover:text-blue-700"
-                href="#"
-                aria-label="Facebook"
+                href="https://www.instagram.com/agiliumtechnologies/"
+                aria-label="Instagram"
               >
                 <Instagram className="w-8 h-8" />
               </a>

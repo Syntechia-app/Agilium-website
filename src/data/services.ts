@@ -16,7 +16,7 @@ export const services = [
     title: "Digital Solutions",
     subtitle: "Digital Transformation",
     description:
-      "Deliver innovative digital solutions designed to transform the way organizations operate and grow. From custom software development and cloud-based platforms to enterprise automation and data-driven systems, we empower businesses to streamline processes, enhance productivity, and accelerate digital transformation. Our agile approach ensures every solution is tailored to meet unique business needs, driving measurable impact and long-term success.",
+      "Deliver innovative digital solutions designed to transform the way organizations operate and grow. From custom software development and cloud-based platforms to enterprise automation and data-driven systems, we empower businesses to streamline processes and accelerate digital transformation. Our agile approach ensures every solution is tailored to meet unique business needs, driving measurable impact and long-term success.",
     features: [
       "Software Development",
       "Website & Web Application Development",
@@ -64,7 +64,7 @@ export const services = [
     title: "Banking & Financial Solutions",
     subtitle: "Financial Technology",
     description:
-      "we empower banks and financial institutions with innovative digital solutions that enhance efficiency, strengthen security, and elevate customer experience. From core banking modernization and digital payment systems to AI-driven risk management and regulatory compliance, we deliver tailored solutions that align with industry demands. Our expertise ensures seamless integration of cutting-edge technologies, enabling financial organizations to stay competitive, agile, and future-ready.",
+      "Empower banks and financial institutions with innovative digital solutions that enhance efficiency, strengthen security, and elevate customer experience. From core banking modernization and digital payment systems to AI-driven risk management and regulatory compliance. Our expertise ensures seamless integration of cutting-edge technologies, enabling financial organizations to stay competitive, agile, and future-ready.",
     features: [
       "Banking & Financial Software Development",
       "Banking Software Testing & Quality Assurance",

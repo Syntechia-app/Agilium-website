@@ -1,15 +1,35 @@
 import { Card, CardContent } from "@/components/ui/card";
 
 const partners = [
+   {
+    name: "PTC",
+    logo: "/images/partners/Ptc-logo.png",
+    category: "Learning Management System",
+  },
   {
     name: "ATHRIB IT",
     logo: "/images/partners/athrib-bg.png",
-    category: "Website Development",
+    category: "KPI Automation",
   },
   {
     name: "GAD MEDICAL",
     logo: "/images/partners/gad med.png",
     category: "Website Development",
+  },
+   {
+    name: "ALISMAILY MEDICAL",
+    logo: "/images/partners/alismailymedical.png",
+    category: "IT & Consulting",
+  },
+  {
+    name: "HORIZON TECHNOLOGIES",
+    logo: "/images/partners/horizon-logo.png",
+    category: "Content Relation System",
+  },
+    {
+    name: "EliasKali",
+    logo: "/images/partners/eliaskuli.svg",
+    category: "Technical Consultation",
   },
   {
     name: "SAMGEO",
@@ -21,25 +41,25 @@ const partners = [
     logo: "/images/partners/Wales.png",
     category: "Network Infrastructure",
   },
+   {
+    name: "SYNTECHIA",
+    logo: "/images/partners/syntechia.png",
+    category: "Pass Data Management & Visualization",
+  },
+   {
+    name: "Kristensenmanagement",
+    logo: "/images/partners/kristensenmanagement.png",
+    category: "Task Management System",
+  },
   {
     name: "KOCH MEDICAL",
     logo: "/images/partners/koch-medical.png",
     category: "Website Development",
   },
-  {
-    name: "ALISMAILY MEDICAL",
-    logo: "/images/partners/alismailymedical.png",
-    category: "IT & Consulting",
-  },
-  {
-    name: "HORIZON TECHNOLOGIES",
-    logo: "/images/partners/horizon-logo.png",
-    category: "Website Development",
-  },
-  {
-    name: "SYNTECHIA",
-    logo: "/images/partners/syntechia.png",
-    category: "Virtualization",
+   {
+    name: "Kqterpillar House",
+    logo: "/images/partners/CATHouseLogo.png",
+    category: "Content Management System",
   },
 ];
 

@@ -97,7 +97,7 @@ export function ServicesPageHero() {
         animate="visible" // Animate on page load
       >
         <motion.h1
-          className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight"
+          className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight"
           variants={itemVariants}
         >
           Engineering Your{" "}

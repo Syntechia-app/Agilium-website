@@ -93,7 +93,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors rounded text-gray-800 hover:text-blue-700"
-                  to="/services"
+                  to="/services/$slug" params={{ slug: "data-analytics" }}
                 >
                   Data & Analytics
                 </Link>
@@ -101,7 +101,7 @@ export function Footer() {
               <li>
                 <Link
                   className="transition-colors rounded text-gray-800 hover:text-blue-700"
-                  to="/services"
+                  to="/services/$slug" params={{ slug: "advisory-transformation" }}
                 >
                   Advisory & Transformation
                 </Link>

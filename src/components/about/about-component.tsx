@@ -284,36 +284,59 @@ export const AboutComponent: FC = () => {
                       everything we do.
                     </p>
                     <ul className="text-gray-800 space-y-3 text-left">
-                      <li>
-                        <strong className="text-gray-800">Innovation: </strong>
-                        Continuously pushing boundaries with creative and
-                        transformative solutions.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        <span>
+                          <strong className="text-gray-800">
+                            Innovation:{" "}
+                          </strong>
+                          Continuously pushing boundaries with creative and
+                          transformative solutions.
+                        </span>
                       </li>
-                      <li>
-                        <strong className="text-gray-800">Integrity: </strong>
-                        Operating with transparency, trust, and responsibility.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        <span>
+                          <strong className="text-gray-800">Integrity: </strong>
+                          Operating with transparency, trust, and
+                          responsibility.
+                        </span>
                       </li>
-                      <li>
-                        <strong className="text-gray-800">Agility: </strong>{" "}
-                        Adapting quickly to changing needs and delivering with
-                        speed and precision.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        <span>
+                          <strong className="text-gray-800">Agility: </strong>{" "}
+                          Adapting quickly to changing needs and delivering with
+                          speed and precision.
+                        </span>
                       </li>
-                      <li>
-                        <strong className="text-gray-800">Impact: </strong>{" "}
-                        Driving measurable value for governments, enterprises,
-                        and communities.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        <span>
+                          <strong className="text-gray-800">Impact: </strong>{" "}
+                          Driving measurable value for governments, enterprises,
+                          and communities.
+                        </span>
                       </li>
-                      <li>
-                        <strong className="text-gray-800">
-                          Collaboration:{" "}
-                        </strong>
-                        Building strong partnerships to co-create sustainable
-                        outcomes.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        <span>
+                          <strong className="text-gray-800">
+                            Collaboration:{" "}
+                          </strong>
+                          Building strong partnerships to co-create sustainable
+                          outcomes.
+                        </span>
                       </li>
-                      <li>
-                        <strong className="text-gray-800">Excellence: </strong>
-                        Upholding the highest standards in every project and
-                        interaction.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        <span>
+                          <strong className="text-gray-800">
+                            Excellence:{" "}
+                          </strong>
+                          Upholding the highest standards in every project and
+                          interaction.
+                        </span>
                       </li>
                     </ul>
                   </CardContent>
@@ -344,28 +367,34 @@ export const AboutComponent: FC = () => {
                       and leadership that endure over time.
                     </p>
                     <ul className="text-gray-800 space-y-2 text-left">
-                      <li>
-                        • Empower Governments & Enterprises with cutting-edge
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        Empower Governments & Enterprises with cutting-edge
                         digital solutions.
                       </li>
-                      <li>
-                        • Bridge Digital & Physical Worlds through AI, IoT, and
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        Bridge Digital & Physical Worlds through AI, IoT, and
                         data-driven innovation.
                       </li>
-                      <li>
-                        • Lead in the GCC & Saudi Market as a trusted digital
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        Lead in the GCC & Saudi Market as a trusted digital
                         transformation partner.
                       </li>
-                      <li>
-                        • Drive Sustainable Growth by delivering long-term,
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        Drive Sustainable Growth by delivering long-term,
                         future-ready solutions.
                       </li>
-                      <li>
-                        • Advance Data Analytics & Visualization to enable
-                        smarter decision-making.
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        Advance Data Analytics & Visualization to enable smarter
+                        decision-making.
                       </li>
-                      <li>
-                        • Foster Talent & Innovation within the region by
+                      <li className="flex gap-2">
+                        <SquareCheckBig className="w-5 h-5 text-blue-500 flex-shrink-0" />{" "}
+                        Foster Talent & Innovation within the region by
                         nurturing expertise.
                       </li>
                     </ul>
